@@ -94,10 +94,22 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let itemAt = Int(targetContentOffset.pointee.x / self.view.frame.width)
         let indexPath = IndexPath(item: itemAt, section: 0)
-        keywordMenuTabBarView.menuCollectionView.selectItem(at: indexPath,
-                                                        animated: true,
-                                                        scrollPosition: [])
+        
+        let lastContentOffset: CGFloat = 0
+        
+        if lastContentOffset > scrollView.contentOffset.x {
+            print("drag left")
+            keywordMenuTabBarView.menuCollectionView.selectItem(at: indexPath,
+                                                                animated: true,
+                                                                scrollPosition: .left)
+        } else {
+            print("drag right")
+            keywordMenuTabBarView.menuCollectionView.selectItem(at: indexPath,
+                                                                animated: true,
+                                                                scrollPosition: .centeredHorizontally)
+        }
     }
+    
 }
 
 
