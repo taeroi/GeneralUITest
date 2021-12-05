@@ -8,6 +8,7 @@
 import UIKit
 
 final class KeywordPageCell: BaseCollectionViewCell {
+
     
     // ===== UI =====
     var label: UILabel = {
@@ -23,6 +24,8 @@ final class KeywordPageCell: BaseCollectionViewCell {
     // ====== Properties ======
     private let contentCellId = "contentCellId"
     
+    weak var delegate: NavigationPushable?
+
     
     //MARK: - Setup Subviews
     
@@ -69,8 +72,7 @@ extension KeywordPageCell: UICollectionViewDelegate, UICollectionViewDataSource 
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("selected cell")
+        delegate?.selected(at: indexPath)
     }
-   
     
 }

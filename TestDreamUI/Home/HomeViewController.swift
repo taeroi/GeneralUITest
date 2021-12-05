@@ -35,6 +35,7 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         navigationController?.hidesBarsOnSwipe = true
         title = "home"
+        
     }
     
     
@@ -81,6 +82,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: keywordPageCellId, for: indexPath) as! KeywordPageCell
         cell.label.text = "\(indexPath.row + 1)번째 뷰"
+        cell.delegate = self
+        
         return cell
     }
     
@@ -149,5 +152,17 @@ extension HomeViewController: MenuBarScrollable {
                                         at: .centeredHorizontally,
                                         animated: true)
     }
+    
+}
+
+
+extension HomeViewController: NavigationPushable {
+    func selected(at indexPath: IndexPath) {
+        debugPrint("Selcted IndexPath :: ", indexPath)
+        
+        let contentVC = ContentViewController(indexPath: indexPath)
+        navigationController?.pushViewController(contentVC, animated: true)
+    }
+    
     
 }
