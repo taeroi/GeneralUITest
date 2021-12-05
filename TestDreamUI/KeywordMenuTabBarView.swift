@@ -8,7 +8,7 @@
 import UIKit
 
 protocol MenuBarScrollable: AnyObject {
-    func getMenuBar(scrollTo index: Int)
+    func getPageOffset(from index: Int)
 }
 
 
@@ -47,7 +47,7 @@ final class KeywordMenuTabBarView: UIView {
     var indicatorView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .black
+        view.backgroundColor = .clear
         return view
     }()
     
@@ -75,7 +75,6 @@ final class KeywordMenuTabBarView: UIView {
             animated: false,
             scrollPosition: []
         )
-        
     }
     
     private func setupViews() {
@@ -116,17 +115,17 @@ extension KeywordMenuTabBarView: UICollectionViewDelegate, UICollectionViewDataS
             width: self.frame.width / showingKeywordCount,
             height: 55
         )
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.getMenuBar(scrollTo: indexPath.row)
+        delegate?.getPageOffset(from: indexPath.row)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         guard let cell = collectionView.cellForItem(at: indexPath) as? KeywordMenuCell else {return}
         cell.label.textColor = .lightGray
     }
+    
 }
 
 

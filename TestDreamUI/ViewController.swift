@@ -87,7 +87,10 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         return keywordCount
     }
     
+    // indicatorView 위치 제어
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        // selected cell의 offset의 leadingAnchor와 같아야 함
         keywordMenuTabBarView.indicatorViewLeadingConstraint.constant = scrollView.contentOffset.x / showingKeywordCount
     }
     
@@ -133,11 +136,17 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 
 extension ViewController: MenuBarScrollable {
     
-    func getMenuBar(scrollTo index: Int) {
+    func getPageOffset(from index: Int) {
         let indexPath = IndexPath(row: index, section: 0)
-        self.pageCollectionView.scrollToItem(at: indexPath,
-                                             at: .centeredHorizontally,
-                                             animated: true)
+        
+        keywordMenuTabBarView.menuCollectionView.selectItem(
+            at: indexPath,
+            animated: true,
+            scrollPosition: .centeredHorizontally
+        )
+        pageCollectionView.scrollToItem(at: indexPath,
+                                        at: .centeredHorizontally,
+                                        animated: true)
     }
     
 }
