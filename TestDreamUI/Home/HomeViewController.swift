@@ -26,7 +26,8 @@ class HomeViewController: BaseViewController {
     }()
     
     // ===== Properties =====
-    private let keywordPageCellId = "keywordPageCellId"
+    private let secondRowGridCellId = "secondRowGridCellId"
+    private let mosaicGridCellId = "mosaicGridCellId"
     
     
     //MARK: - Life Cycles
@@ -63,7 +64,8 @@ class HomeViewController: BaseViewController {
         pageCollectionView.backgroundColor = .gray
         pageCollectionView.showsHorizontalScrollIndicator = false
         pageCollectionView.isPagingEnabled = true
-        pageCollectionView.register(ContentPageCell.self, forCellWithReuseIdentifier: keywordPageCellId)
+        pageCollectionView.register(SecondRowGridContentPageCell.self, forCellWithReuseIdentifier: secondRowGridCellId)
+        pageCollectionView.register(MosaicGridContentPageCell.self, forCellWithReuseIdentifier: mosaicGridCellId)
         
         view.addSubview(pageCollectionView)
         pageCollectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
@@ -80,11 +82,24 @@ class HomeViewController: BaseViewController {
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: keywordPageCellId, for: indexPath) as! ContentPageCell
-        cell.label.text = "\(indexPath.row + 1)번째 뷰"
-        cell.delegate = self
+        switch indexPath.item {
+        case 0:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: secondRowGridCellId, for: indexPath) as? SecondRowGridContentPageCell else {
+                return UICollectionViewCell()
+            }
+            cell.label.text = "\(indexPath.row + 1)번째 뷰"
+            cell.delegate = self
+            
+            return cell
+
+        default:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: mosaicGridCellId, for: indexPath) as? MosaicGridContentPageCell else {
+                return UICollectionViewCell()
+            }
+            
+            return cell
+        }
         
-        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
