@@ -7,11 +7,6 @@
 
 import UIKit
 
-protocol MosaicGridScrollable: NSObject {
-    func mosaicGridScrollItem(at indexPath: IndexPath,
-                              at scrollPosition: UICollectionView.ScrollPosition)
-}
-
 
 final class MosaicGridContentPageCell: BaseCollectionViewCell {
     
@@ -81,14 +76,12 @@ extension MosaicGridContentPageCell: UICollectionViewDelegate, UICollectionViewD
         }
         cell.indexPathLabel.text = gridData[indexPath.item].title
         cell.backgroundColor = gridData[indexPath.item].color
-//        cell.indexPathLabel.text = "\(indexPath)"
         return cell
-        
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        delegate?.selected(at: indexPath)
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.selected(at: indexPath)
+    }
     
 }
 

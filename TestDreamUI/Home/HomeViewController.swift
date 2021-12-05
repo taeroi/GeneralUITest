@@ -96,7 +96,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: mosaicGridCellId, for: indexPath) as? MosaicGridContentPageCell else {
                 return UICollectionViewCell()
             }
-            
+            cell.delegate = self
             return cell
         }
         
