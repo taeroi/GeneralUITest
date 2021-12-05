@@ -1,5 +1,5 @@
 //
-//  ColumnFlowLayout.swift
+//  SecondRowColumnFlowLayout.swift
 //  TestDreamUI
 //
 //  Created by 박태환 on 2021/12/05.
@@ -8,8 +8,10 @@
 import Foundation
 import UIKit
 
-class ColumnFlowLayout: UICollectionViewFlowLayout {
+class SecondRowColumnFlowLayout: UICollectionViewFlowLayout {
     
+    // ===== Properties =====
+    //
     // cell 너비의 최소값만 알고 있으면 뷰에 알아서 grid형태이든, tableView형태이든 알아서 뿌려지는 형태
     private let minColumnWidth: CGFloat = UIScreen.main.bounds.width / 3
     private let cellHeight: CGFloat = UIScreen.main.bounds.height / 3

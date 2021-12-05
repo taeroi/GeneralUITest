@@ -10,11 +10,13 @@
 		64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */; };
 		64D7CCA3275C8F660003B170 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA2275C8F660003B170 /* CardViewController.swift */; };
 		64D7CCA5275C8F6D0003B170 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA4275C8F6D0003B170 /* MyViewController.swift */; };
-		64D7CCAD275C93E00003B170 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCAC275C93E00003B170 /* ColumnFlowLayout.swift */; };
+		64D7CCAD275C93E00003B170 /* SecondRowColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCAC275C93E00003B170 /* SecondRowColumnFlowLayout.swift */; };
 		64D7CCAF275C94B90003B170 /* SecondRowColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCAE275C94B90003B170 /* SecondRowColumnCell.swift */; };
 		64D7CCB1275C9BEB0003B170 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCB0275C9BEB0003B170 /* ContentViewController.swift */; };
 		64D7CCB3275C9C9A0003B170 /* NavigationPushable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCB2275C9C9A0003B170 /* NavigationPushable.swift */; };
 		64D7CCB8275CADA10003B170 /* MosaicGridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCB7275CADA10003B170 /* MosaicGridFlowLayout.swift */; };
+		64D7CCBA275CB0900003B170 /* MosaicGridContentPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCB9275CB0900003B170 /* MosaicGridContentPageCell.swift */; };
+		64D7CCBC275CB11C0003B170 /* MosaicGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCBB275CB11C0003B170 /* MosaicGridCell.swift */; };
 		64DD3FC227507C8A00160991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FC127507C8A00160991 /* AppDelegate.swift */; };
 		64DD3FC427507C8A00160991 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FC327507C8A00160991 /* SceneDelegate.swift */; };
 		64DD3FC627507C8A00160991 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FC527507C8A00160991 /* HomeViewController.swift */; };
@@ -26,7 +28,7 @@
 		64DD3FE827507C8C00160991 /* TestDreamUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FE727507C8C00160991 /* TestDreamUIUITestsLaunchTests.swift */; };
 		64DD3FF5275080D700160991 /* KeywordMenuTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FF4275080D700160991 /* KeywordMenuTabBarView.swift */; };
 		64DD3FF72750812900160991 /* KeywordMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FF62750812900160991 /* KeywordMenuCell.swift */; };
-		64DD3FF92750815400160991 /* ContentPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FF82750815400160991 /* ContentPageCell.swift */; };
+		64DD3FF92750815400160991 /* SecondRowGridContentPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FF82750815400160991 /* SecondRowGridContentPageCell.swift */; };
 		64DD3FFB275090AC00160991 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FFA275090AC00160991 /* BaseCollectionViewCell.swift */; };
 		64DD3FFD2750927400160991 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FFC2750927400160991 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,11 +54,13 @@
 		64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapbarViewController.swift; sourceTree = "<group>"; };
 		64D7CCA2275C8F660003B170 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		64D7CCA4275C8F6D0003B170 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
-		64D7CCAC275C93E00003B170 /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
+		64D7CCAC275C93E00003B170 /* SecondRowColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRowColumnFlowLayout.swift; sourceTree = "<group>"; };
 		64D7CCAE275C94B90003B170 /* SecondRowColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRowColumnCell.swift; sourceTree = "<group>"; };
 		64D7CCB0275C9BEB0003B170 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		64D7CCB2275C9C9A0003B170 /* NavigationPushable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPushable.swift; sourceTree = "<group>"; };
 		64D7CCB7275CADA10003B170 /* MosaicGridFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicGridFlowLayout.swift; sourceTree = "<group>"; };
+		64D7CCB9275CB0900003B170 /* MosaicGridContentPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicGridContentPageCell.swift; sourceTree = "<group>"; };
+		64D7CCBB275CB11C0003B170 /* MosaicGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicGridCell.swift; sourceTree = "<group>"; };
 		64DD3FBE27507C8A00160991 /* TestDreamUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDreamUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DD3FC127507C8A00160991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64DD3FC327507C8A00160991 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +76,7 @@
 		64DD3FE727507C8C00160991 /* TestDreamUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDreamUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		64DD3FF4275080D700160991 /* KeywordMenuTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordMenuTabBarView.swift; sourceTree = "<group>"; };
 		64DD3FF62750812900160991 /* KeywordMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordMenuCell.swift; sourceTree = "<group>"; };
-		64DD3FF82750815400160991 /* ContentPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPageCell.swift; sourceTree = "<group>"; };
+		64DD3FF82750815400160991 /* SecondRowGridContentPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRowGridContentPageCell.swift; sourceTree = "<group>"; };
 		64DD3FFA275090AC00160991 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		64DD3FFC2750927400160991 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,8 +145,10 @@
 		64D7CCB5275CAC0F0003B170 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				64DD3FF82750815400160991 /* ContentPageCell.swift */,
+				64DD3FF82750815400160991 /* SecondRowGridContentPageCell.swift */,
 				64D7CCAE275C94B90003B170 /* SecondRowColumnCell.swift */,
+				64D7CCB9275CB0900003B170 /* MosaicGridContentPageCell.swift */,
+				64D7CCBB275CB11C0003B170 /* MosaicGridCell.swift */,
 				64D7CCB0275C9BEB0003B170 /* ContentViewController.swift */,
 			);
 			path = Content;
@@ -218,7 +224,6 @@
 			children = (
 				64DD3FFC2750927400160991 /* BaseViewController.swift */,
 				64DD3FFA275090AC00160991 /* BaseCollectionViewCell.swift */,
-				64D7CCAC275C93E00003B170 /* ColumnFlowLayout.swift */,
 			);
 			path = BaseUI;
 			sourceTree = "<group>";
@@ -364,9 +369,11 @@
 				64DD3FC427507C8A00160991 /* SceneDelegate.swift in Sources */,
 				64DD3FFD2750927400160991 /* BaseViewController.swift in Sources */,
 				64D7CCBA275CB0900003B170 /* MosaicGridContentPageCell.swift in Sources */,
+				64D7CCAD275C93E00003B170 /* SecondRowColumnFlowLayout.swift in Sources */,
+				64D7CCBC275CB11C0003B170 /* MosaicGridCell.swift in Sources */,
 				64D7CCB1275C9BEB0003B170 /* ContentViewController.swift in Sources */,
 				64DD3FF72750812900160991 /* KeywordMenuCell.swift in Sources */,
-				64DD3FF92750815400160991 /* ContentPageCell.swift in Sources */,
+				64DD3FF92750815400160991 /* SecondRowGridContentPageCell.swift in Sources */,
 				64D7CCA5275C8F6D0003B170 /* MyViewController.swift in Sources */,
 				64D7CCB8275CADA10003B170 /* MosaicGridFlowLayout.swift in Sources */,
 				64DD3FCC27507C8A00160991 /* TestDreamUI.xcdatamodeld in Sources */,

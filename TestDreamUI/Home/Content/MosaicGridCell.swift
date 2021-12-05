@@ -1,5 +1,5 @@
 //
-//  SecondRowColumnCell.swift
+//  MosaicGridCell.swift
 //  TestDreamUI
 //
 //  Created by 박태환 on 2021/12/05.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SecondRowColumnCell: BaseCollectionViewCell {
+final class MosaicGridCell: BaseCollectionViewCell {
     
     // ===== UI =====
     let indexPathLabel: UILabel = {
@@ -20,7 +20,6 @@ final class SecondRowColumnCell: BaseCollectionViewCell {
     }()
     
     override func setupSubviews() {
-        layer.cornerRadius = 20.0
         
         addSubview(indexPathLabel)
         indexPathLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
