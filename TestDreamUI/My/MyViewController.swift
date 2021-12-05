@@ -12,7 +12,7 @@ final class MyViewController: BaseViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "my"
         view.backgroundColor = .red
     }
 }

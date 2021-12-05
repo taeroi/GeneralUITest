@@ -12,7 +12,7 @@ final class CardViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "card"
         view.backgroundColor = .green
     }
 }

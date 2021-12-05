@@ -29,7 +29,7 @@ final class TapbarViewController: UITabBarController {
     
     
     private func setupTabbar() {
-        
+        tabBar.backgroundColor = .white
     }
     
     private func setupViewControllers() {

@@ -10,6 +10,8 @@
 		64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */; };
 		64D7CCA3275C8F660003B170 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA2275C8F660003B170 /* CardViewController.swift */; };
 		64D7CCA5275C8F6D0003B170 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA4275C8F6D0003B170 /* MyViewController.swift */; };
+		64D7CCAD275C93E00003B170 /* ColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCAC275C93E00003B170 /* ColumnFlowLayout.swift */; };
+		64D7CCAF275C94B90003B170 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCAE275C94B90003B170 /* ContentCell.swift */; };
 		64DD3FC227507C8A00160991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FC127507C8A00160991 /* AppDelegate.swift */; };
 		64DD3FC427507C8A00160991 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FC327507C8A00160991 /* SceneDelegate.swift */; };
 		64DD3FC627507C8A00160991 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FC527507C8A00160991 /* HomeViewController.swift */; };
@@ -47,6 +49,8 @@
 		64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapbarViewController.swift; sourceTree = "<group>"; };
 		64D7CCA2275C8F660003B170 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		64D7CCA4275C8F6D0003B170 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		64D7CCAC275C93E00003B170 /* ColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnFlowLayout.swift; sourceTree = "<group>"; };
+		64D7CCAE275C94B90003B170 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		64DD3FBE27507C8A00160991 /* TestDreamUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDreamUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DD3FC127507C8A00160991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64DD3FC327507C8A00160991 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 				64DD3FF4275080D700160991 /* KeywordMenuTabBarView.swift */,
 				64DD3FF62750812900160991 /* KeywordMenuCell.swift */,
 				64DD3FF82750815400160991 /* KeywordPageCell.swift */,
+				64D7CCAE275C94B90003B170 /* ContentCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			children = (
 				64DD3FFC2750927400160991 /* BaseViewController.swift */,
 				64DD3FFA275090AC00160991 /* BaseCollectionViewCell.swift */,
+				64D7CCAC275C93E00003B170 /* ColumnFlowLayout.swift */,
 			);
 			path = BaseUI;
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64DD3FC627507C8A00160991 /* HomeViewController.swift in Sources */,
+				64D7CCAF275C94B90003B170 /* ContentCell.swift in Sources */,
 				64DD3FFB275090AC00160991 /* BaseCollectionViewCell.swift in Sources */,
 				64DD3FF5275080D700160991 /* KeywordMenuTabBarView.swift in Sources */,
 				64DD3FC227507C8A00160991 /* AppDelegate.swift in Sources */,
@@ -321,6 +328,7 @@
 				64D7CCA3275C8F660003B170 /* CardViewController.swift in Sources */,
 				64DD3FC427507C8A00160991 /* SceneDelegate.swift in Sources */,
 				64DD3FFD2750927400160991 /* BaseViewController.swift in Sources */,
+				64D7CCAD275C93E00003B170 /* ColumnFlowLayout.swift in Sources */,
 				64DD3FF72750812900160991 /* KeywordMenuCell.swift in Sources */,
 				64DD3FF92750815400160991 /* KeywordPageCell.swift in Sources */,
 				64D7CCA5275C8F6D0003B170 /* MyViewController.swift in Sources */,
