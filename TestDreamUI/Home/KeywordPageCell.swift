@@ -50,7 +50,7 @@ final class KeywordPageCell: BaseCollectionViewCell {
 
         gridCollectionView.delegate = self
         gridCollectionView.dataSource = self
-        gridCollectionView.register(ContentCell.self,
+        gridCollectionView.register(SecondRowColumnCell.self,
                                     forCellWithReuseIdentifier: contentCellId)
     }
     
@@ -65,10 +65,12 @@ extension KeywordPageCell: UICollectionViewDelegate, UICollectionViewDataSource 
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: contentCellId, for: indexPath) as? ContentCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: contentCellId, for: indexPath) as? SecondRowColumnCell else {
             return BaseCollectionViewCell()
         }
+        cell.indexPathLabel.text = "\(indexPath)"
         return cell
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
