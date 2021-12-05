@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */; };
-		64D7CCA3275C8F660003B170 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA2275C8F660003B170 /* CardViewController.swift */; };
+		64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA2275C8F660003B170 /* LoungeViewController.swift */; };
 		64D7CCA5275C8F6D0003B170 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA4275C8F6D0003B170 /* MyViewController.swift */; };
 		64D7CCAD275C93E00003B170 /* SecondRowColumnFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCAC275C93E00003B170 /* SecondRowColumnFlowLayout.swift */; };
 		64D7CCAF275C94B90003B170 /* SecondRowColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCAE275C94B90003B170 /* SecondRowColumnCell.swift */; };
@@ -52,7 +52,7 @@
 
 /* Begin PBXFileReference section */
 		64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapbarViewController.swift; sourceTree = "<group>"; };
-		64D7CCA2275C8F660003B170 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		64D7CCA2275C8F660003B170 /* LoungeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeViewController.swift; sourceTree = "<group>"; };
 		64D7CCA4275C8F6D0003B170 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		64D7CCAC275C93E00003B170 /* SecondRowColumnFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRowColumnFlowLayout.swift; sourceTree = "<group>"; };
 		64D7CCAE275C94B90003B170 /* SecondRowColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRowColumnCell.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 		64D7CCAA275C90830003B170 /* Card */ = {
 			isa = PBXGroup;
 			children = (
-				64D7CCA2275C8F660003B170 /* CardViewController.swift */,
+				64D7CCA2275C8F660003B170 /* LoungeViewController.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -364,7 +364,7 @@
 				64DD3FF5275080D700160991 /* KeywordMenuTabBarView.swift in Sources */,
 				64DD3FC227507C8A00160991 /* AppDelegate.swift in Sources */,
 				64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */,
-				64D7CCA3275C8F660003B170 /* CardViewController.swift in Sources */,
+				64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */,
 				64D7CCB3275C9C9A0003B170 /* NavigationPushable.swift in Sources */,
 				64DD3FC427507C8A00160991 /* SceneDelegate.swift in Sources */,
 				64DD3FFD2750927400160991 /* BaseViewController.swift in Sources */,

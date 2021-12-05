@@ -35,7 +35,7 @@ final class TapbarViewController: UITabBarController {
     private func setupViewControllers() {
         
         let vcList = [UINavigationController(rootViewController: HomeViewController()),
-                      UINavigationController(rootViewController: CardViewController()),
+                      UINavigationController(rootViewController: LoungeViewController()),
                       UINavigationController(rootViewController: MyViewController())]
         
         for (index, vc) in vcList.enumerated() {
