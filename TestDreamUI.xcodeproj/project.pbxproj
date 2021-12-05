@@ -25,7 +25,7 @@
 		64DD3FE827507C8C00160991 /* TestDreamUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FE727507C8C00160991 /* TestDreamUIUITestsLaunchTests.swift */; };
 		64DD3FF5275080D700160991 /* KeywordMenuTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FF4275080D700160991 /* KeywordMenuTabBarView.swift */; };
 		64DD3FF72750812900160991 /* KeywordMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FF62750812900160991 /* KeywordMenuCell.swift */; };
-		64DD3FF92750815400160991 /* KeywordPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FF82750815400160991 /* KeywordPageCell.swift */; };
+		64DD3FF92750815400160991 /* ContentPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FF82750815400160991 /* ContentPageCell.swift */; };
 		64DD3FFB275090AC00160991 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FFA275090AC00160991 /* BaseCollectionViewCell.swift */; };
 		64DD3FFD2750927400160991 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FFC2750927400160991 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
@@ -70,7 +70,7 @@
 		64DD3FE727507C8C00160991 /* TestDreamUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDreamUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		64DD3FF4275080D700160991 /* KeywordMenuTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordMenuTabBarView.swift; sourceTree = "<group>"; };
 		64DD3FF62750812900160991 /* KeywordMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordMenuCell.swift; sourceTree = "<group>"; };
-		64DD3FF82750815400160991 /* KeywordPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeywordPageCell.swift; sourceTree = "<group>"; };
+		64DD3FF82750815400160991 /* ContentPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPageCell.swift; sourceTree = "<group>"; };
 		64DD3FFA275090AC00160991 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		64DD3FFC2750927400160991 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,7 +107,7 @@
 				64DD3FC527507C8A00160991 /* HomeViewController.swift */,
 				64DD3FF4275080D700160991 /* KeywordMenuTabBarView.swift */,
 				64DD3FF62750812900160991 /* KeywordMenuCell.swift */,
-				64DD3FF82750815400160991 /* KeywordPageCell.swift */,
+				64DD3FF82750815400160991 /* ContentPageCell.swift */,
 				64D7CCAE275C94B90003B170 /* SecondRowColumnCell.swift */,
 				64D7CCB0275C9BEB0003B170 /* ContentViewController.swift */,
 			);
@@ -338,7 +338,7 @@
 				64D7CCAD275C93E00003B170 /* ColumnFlowLayout.swift in Sources */,
 				64D7CCB1275C9BEB0003B170 /* ContentViewController.swift in Sources */,
 				64DD3FF72750812900160991 /* KeywordMenuCell.swift in Sources */,
-				64DD3FF92750815400160991 /* KeywordPageCell.swift in Sources */,
+				64DD3FF92750815400160991 /* ContentPageCell.swift in Sources */,
 				64D7CCA5275C8F6D0003B170 /* MyViewController.swift in Sources */,
 				64DD3FCC27507C8A00160991 /* TestDreamUI.xcdatamodeld in Sources */,
 			);

@@ -63,7 +63,7 @@ class HomeViewController: BaseViewController {
         pageCollectionView.backgroundColor = .gray
         pageCollectionView.showsHorizontalScrollIndicator = false
         pageCollectionView.isPagingEnabled = true
-        pageCollectionView.register(KeywordPageCell.self, forCellWithReuseIdentifier: keywordPageCellId)
+        pageCollectionView.register(ContentPageCell.self, forCellWithReuseIdentifier: keywordPageCellId)
         
         view.addSubview(pageCollectionView)
         pageCollectionView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
@@ -80,7 +80,7 @@ class HomeViewController: BaseViewController {
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: keywordPageCellId, for: indexPath) as! KeywordPageCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: keywordPageCellId, for: indexPath) as! ContentPageCell
         cell.label.text = "\(indexPath.row + 1)번째 뷰"
         cell.delegate = self
         

@@ -1,5 +1,5 @@
 //
-//  KeywordPageCell.swift
+//  ContentPageCell.swift
 //  TestDreamUI
 //
 //  Created by 박태환 on 2021/11/26.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class KeywordPageCell: BaseCollectionViewCell {
+final class ContentPageCell: BaseCollectionViewCell {
 
     
     // ===== UI =====
@@ -57,7 +57,7 @@ final class KeywordPageCell: BaseCollectionViewCell {
 }
 
 
-extension KeywordPageCell: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ContentPageCell: UICollectionViewDelegate, UICollectionViewDataSource {
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
