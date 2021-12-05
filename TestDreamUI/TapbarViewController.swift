@@ -25,11 +25,38 @@ final class TapbarViewController: UITabBarController {
         
         setupTabbar()
         setupViewControllers()
+        
+        delegate = self
     }
     
     
     private func setupTabbar() {
         tabBar.backgroundColor = .white
+        
+        if #available(iOS 15.0, *) {
+            let appearance = UITabBarAppearance()
+            appearance.configureWithOpaqueBackground()
+            appearance.backgroundColor = .white
+            setTabbarAppearanceColor(appearance.compactInlineLayoutAppearance)
+            setTabbarAppearanceColor(appearance.inlineLayoutAppearance)
+            setTabbarAppearanceColor(appearance.stackedLayoutAppearance)
+            
+            tabBar.standardAppearance = appearance
+            tabBar.scrollEdgeAppearance = appearance
+            
+        } else {
+            tabBar.barTintColor = .black
+            tabBar.unselectedItemTintColor = .lightGray
+        }
+    }
+    
+    @available(iOS 15.0, *)
+    private func setTabbarAppearanceColor(_ appearance: UITabBarItemAppearance) {
+        appearance.selected.titleTextAttributes = [.foregroundColor: UIColor.black]
+        appearance.focused.titleTextAttributes = [.foregroundColor: UIColor.black]
+        appearance.normal.titleTextAttributes = [.foregroundColor: UIColor.lightGray]
+        appearance.disabled.titleTextAttributes = [.foregroundColor: UIColor.lightGray]
+        
     }
     
     private func setupViewControllers() {
@@ -45,5 +72,10 @@ final class TapbarViewController: UITabBarController {
         
         viewControllers = vcList
     }
+    
+}
+
+
+extension TapbarViewController: UITabBarControllerDelegate {
     
 }
