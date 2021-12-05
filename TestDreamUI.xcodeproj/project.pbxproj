@@ -105,11 +105,8 @@
 			children = (
 				64D7CCB2275C9C9A0003B170 /* NavigationPushable.swift */,
 				64DD3FC527507C8A00160991 /* HomeViewController.swift */,
-				64DD3FF4275080D700160991 /* KeywordMenuTabBarView.swift */,
-				64DD3FF62750812900160991 /* KeywordMenuCell.swift */,
-				64DD3FF82750815400160991 /* ContentPageCell.swift */,
-				64D7CCAE275C94B90003B170 /* SecondRowColumnCell.swift */,
-				64D7CCB0275C9BEB0003B170 /* ContentViewController.swift */,
+				64D7CCB4275CAC070003B170 /* Keyword */,
+				64D7CCB5275CAC0F0003B170 /* Content */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -128,6 +125,25 @@
 				64D7CCA2275C8F660003B170 /* CardViewController.swift */,
 			);
 			path = Card;
+			sourceTree = "<group>";
+		};
+		64D7CCB4275CAC070003B170 /* Keyword */ = {
+			isa = PBXGroup;
+			children = (
+				64DD3FF4275080D700160991 /* KeywordMenuTabBarView.swift */,
+				64DD3FF62750812900160991 /* KeywordMenuCell.swift */,
+			);
+			path = Keyword;
+			sourceTree = "<group>";
+		};
+		64D7CCB5275CAC0F0003B170 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				64DD3FF82750815400160991 /* ContentPageCell.swift */,
+				64D7CCAE275C94B90003B170 /* SecondRowColumnCell.swift */,
+				64D7CCB0275C9BEB0003B170 /* ContentViewController.swift */,
+			);
+			path = Content;
 			sourceTree = "<group>";
 		};
 		64DD3FB527507C8A00160991 = {
