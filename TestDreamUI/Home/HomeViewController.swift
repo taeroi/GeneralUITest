@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  TestDreamUI
 //
 //  Created by 박태환 on 2021/11/26.
@@ -12,7 +12,7 @@ import UIKit
 let keywordCount: Int = 10
 let showingKeywordCount: Double = 5.5
 
-class ViewController: BaseViewController {
+class HomeViewController: BaseViewController {
     
     // ===== UI =====
     private var keywordMenuTabBarView = KeywordMenuTabBarView()
@@ -75,7 +75,7 @@ class ViewController: BaseViewController {
 
 //MARK: - UICollectionViewDelegate, UICollectionViewDataSource
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: keywordPageCellId, for: indexPath) as! KeywordPageCell
@@ -118,7 +118,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
 
 //MARK: - UICollectionViewDelegateFlowLayout
 
-extension ViewController: UICollectionViewDelegateFlowLayout {
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: pageCollectionView.frame.width,
@@ -134,7 +134,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
 
 //MARK: - MenuBarScrollable
 
-extension ViewController: MenuBarScrollable {
+extension HomeViewController: MenuBarScrollable {
     
     func getPageOffset(from index: Int) {
         let indexPath = IndexPath(row: index, section: 0)
