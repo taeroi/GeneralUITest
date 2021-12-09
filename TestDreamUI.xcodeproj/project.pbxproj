@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		647664AF275CF233001A7D7C /* LoungeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664AE275CF233001A7D7C /* LoungeCell.swift */; };
+		647664B1275CF24E001A7D7C /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */; };
+		647664B3275CF56D001A7D7C /* LoungeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B2275CF56D001A7D7C /* LoungeHeaderView.swift */; };
 		64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */; };
 		64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA2275C8F660003B170 /* LoungeViewController.swift */; };
 		64D7CCA5275C8F6D0003B170 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA4275C8F6D0003B170 /* MyViewController.swift */; };
@@ -51,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		647664AE275CF233001A7D7C /* LoungeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeCell.swift; sourceTree = "<group>"; };
+		647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		647664B2275CF56D001A7D7C /* LoungeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeHeaderView.swift; sourceTree = "<group>"; };
 		64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapbarViewController.swift; sourceTree = "<group>"; };
 		64D7CCA2275C8F660003B170 /* LoungeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeViewController.swift; sourceTree = "<group>"; };
 		64D7CCA4275C8F6D0003B170 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				64D7CCA2275C8F660003B170 /* LoungeViewController.swift */,
+				647664B2275CF56D001A7D7C /* LoungeHeaderView.swift */,
+				647664AE275CF233001A7D7C /* LoungeCell.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -224,6 +232,7 @@
 			children = (
 				64DD3FFC2750927400160991 /* BaseViewController.swift */,
 				64DD3FFA275090AC00160991 /* BaseCollectionViewCell.swift */,
+				647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */,
 			);
 			path = BaseUI;
 			sourceTree = "<group>";
@@ -362,11 +371,14 @@
 				64D7CCAF275C94B90003B170 /* SecondRowColumnCell.swift in Sources */,
 				64DD3FFB275090AC00160991 /* BaseCollectionViewCell.swift in Sources */,
 				64DD3FF5275080D700160991 /* KeywordMenuTabBarView.swift in Sources */,
+				647664B1275CF24E001A7D7C /* BaseTableViewCell.swift in Sources */,
 				64DD3FC227507C8A00160991 /* AppDelegate.swift in Sources */,
 				64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */,
+				647664B3275CF56D001A7D7C /* LoungeHeaderView.swift in Sources */,
 				64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */,
 				64D7CCB3275C9C9A0003B170 /* NavigationPushable.swift in Sources */,
 				64DD3FC427507C8A00160991 /* SceneDelegate.swift in Sources */,
+				647664AF275CF233001A7D7C /* LoungeCell.swift in Sources */,
 				64DD3FFD2750927400160991 /* BaseViewController.swift in Sources */,
 				64D7CCBA275CB0900003B170 /* MosaicGridContentPageCell.swift in Sources */,
 				64D7CCAD275C93E00003B170 /* SecondRowColumnFlowLayout.swift in Sources */,
