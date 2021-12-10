@@ -15,8 +15,14 @@ final class LoungeViewController: BaseViewController   {
     private var tableView = UITableView(frame: .zero, style: .grouped)
     
     // ===== Properties =====
-    private let loungeHeaderId = "loungeHeaderId"
-    private let loungeCellId = "loungeCellId"
+    // --- Header ---
+    private let threeContentHeaderId = "threeContentHeaderId"
+    private let oneContentHeaderId = "oneContentHeaderId"
+    private let conceptViewerHeaderId = "conceptViewerHeaderId"
+    // --- Cell ---
+    private let threeContentCellId = "threeContentCellId"
+    private let oneContentCellId = "oneContentCellId"
+    private let conceptViewerCellId = "conceptViewerCellId"
     
     
     //MARK: - Life Cycles
@@ -49,8 +55,13 @@ final class LoungeViewController: BaseViewController   {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.register(OneContentCell.self, forHeaderFooterViewReuseIdentifier: loungeHeaderId)
-        tableView.register(ThreeContentCell.self, forCellReuseIdentifier: loungeCellId)
+        tableView.register(ThreeContentHeader.self, forHeaderFooterViewReuseIdentifier: threeContentHeaderId)
+        tableView.register(OneContentHeader.self, forHeaderFooterViewReuseIdentifier: oneContentHeaderId)
+        tableView.register(ConceptViewerHeader.self, forHeaderFooterViewReuseIdentifier: conceptViewerHeaderId)
+        
+        tableView.register(ThreeContentCell.self, forCellReuseIdentifier: threeContentCellId)
+        tableView.register(OneContentCell.self, forCellReuseIdentifier: oneContentCellId)
+        tableView.register(ConceptViewerCell.self, forCellReuseIdentifier: conceptViewerCellId)
     }
     
 }
@@ -69,7 +80,7 @@ extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.dequeueReusableCell(withIdentifier: loungeCellId, for: indexPath)
+        tableView.dequeueReusableCell(withIdentifier: threeContentCellId, for: indexPath)
             
     }
     
@@ -85,12 +96,12 @@ extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
 extension LoungeViewController {
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        guard let headerView = view as? OneContentCell else { return }
+        guard let headerView = view as? ThreeContentHeader else { return }
         headerView.setTitle("제목")
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        tableView.dequeueReusableHeaderFooterView(withIdentifier: loungeHeaderId) as? OneContentCell
+        tableView.dequeueReusableHeaderFooterView(withIdentifier: threeContentHeaderId) as? ThreeContentHeader
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

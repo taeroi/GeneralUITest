@@ -1,5 +1,5 @@
 //
-//  OneContentCell.swift
+//  ThreeContentHeader.swift
 //  TestDreamUI
 //
 //  Created by 박태환 on 2021/12/05.
@@ -7,13 +7,13 @@
 
 import UIKit
 
-class OneContentCell: UITableViewHeaderFooterView {
+class ThreeContentHeader: UITableViewHeaderFooterView {
     
     
     // ===== UI =====
     private lazy var topLine: UIView = {
        let view = UIView()
-        view.backgroundColor = .gray
+        view.backgroundColor = .lightGray
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

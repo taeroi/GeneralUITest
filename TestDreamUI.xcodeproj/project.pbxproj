@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		647664AF275CF233001A7D7C /* ThreeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664AE275CF233001A7D7C /* ThreeContentCell.swift */; };
 		647664B1275CF24E001A7D7C /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */; };
-		647664B3275CF56D001A7D7C /* OneContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B2275CF56D001A7D7C /* OneContentCell.swift */; };
+		647664B3275CF56D001A7D7C /* ThreeContentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B2275CF56D001A7D7C /* ThreeContentHeader.swift */; };
 		647C22D2276340B200A9F04A /* ConceptViewerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D1276340B200A9F04A /* ConceptViewerCell.swift */; };
+		647C22D62763429B00A9F04A /* OneContentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D52763429B00A9F04A /* OneContentHeader.swift */; };
+		647C22D8276342B000A9F04A /* ConceptViewerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D7276342B000A9F04A /* ConceptViewerHeader.swift */; };
+		647C22DA276342BF00A9F04A /* OneContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D9276342BF00A9F04A /* OneContentCell.swift */; };
 		64B680C52762227D00971E4B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B680C42762227D00971E4B /* CustomButton.swift */; };
 		64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */; };
 		64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA2275C8F660003B170 /* LoungeViewController.swift */; };
@@ -58,8 +61,11 @@
 /* Begin PBXFileReference section */
 		647664AE275CF233001A7D7C /* ThreeContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentCell.swift; sourceTree = "<group>"; };
 		647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		647664B2275CF56D001A7D7C /* OneContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneContentCell.swift; sourceTree = "<group>"; };
+		647664B2275CF56D001A7D7C /* ThreeContentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentHeader.swift; sourceTree = "<group>"; };
 		647C22D1276340B200A9F04A /* ConceptViewerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptViewerCell.swift; sourceTree = "<group>"; };
+		647C22D52763429B00A9F04A /* OneContentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneContentHeader.swift; sourceTree = "<group>"; };
+		647C22D7276342B000A9F04A /* ConceptViewerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptViewerHeader.swift; sourceTree = "<group>"; };
+		647C22D9276342BF00A9F04A /* OneContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneContentCell.swift; sourceTree = "<group>"; };
 		64B680C42762227D00971E4B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapbarViewController.swift; sourceTree = "<group>"; };
 		64D7CCA2275C8F660003B170 /* LoungeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +122,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		647C22D3276341D300A9F04A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				647664AE275CF233001A7D7C /* ThreeContentCell.swift */,
+				647C22D9276342BF00A9F04A /* OneContentCell.swift */,
+				647C22D1276340B200A9F04A /* ConceptViewerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		647C22D4276341D900A9F04A /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				647664B2275CF56D001A7D7C /* ThreeContentHeader.swift */,
+				647C22D52763429B00A9F04A /* OneContentHeader.swift */,
+				647C22D7276342B000A9F04A /* ConceptViewerHeader.swift */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
 		64B680C32762224C00971E4B /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,9 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				64D7CCA2275C8F660003B170 /* LoungeViewController.swift */,
-				647664B2275CF56D001A7D7C /* OneContentCell.swift */,
-				647664AE275CF233001A7D7C /* ThreeContentCell.swift */,
-				647C22D1276340B200A9F04A /* ConceptViewerCell.swift */,
+				647C22D4276341D900A9F04A /* Headers */,
+				647C22D3276341D300A9F04A /* Cells */,
 			);
 			path = Lounge;
 			sourceTree = "<group>";
@@ -390,9 +415,12 @@
 				64DD3FC227507C8A00160991 /* AppDelegate.swift in Sources */,
 				647C22D2276340B200A9F04A /* ConceptViewerCell.swift in Sources */,
 				64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */,
-				647664B3275CF56D001A7D7C /* OneContentCell.swift in Sources */,
+				647664B3275CF56D001A7D7C /* ThreeContentHeader.swift in Sources */,
 				64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */,
+				647C22DA276342BF00A9F04A /* OneContentCell.swift in Sources */,
 				64D7CCB3275C9C9A0003B170 /* NavigationPushable.swift in Sources */,
+				647C22D62763429B00A9F04A /* OneContentHeader.swift in Sources */,
+				647C22D8276342B000A9F04A /* ConceptViewerHeader.swift in Sources */,
 				64DD3FC427507C8A00160991 /* SceneDelegate.swift in Sources */,
 				647664AF275CF233001A7D7C /* ThreeContentCell.swift in Sources */,
 				64DD3FFD2750927400160991 /* BaseViewController.swift in Sources */,
