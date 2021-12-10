@@ -86,7 +86,7 @@ extension LoungeViewController {
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         guard let headerView = view as? LoungeHeaderView else { return }
-        headerView.setTitle("zz")
+        headerView.setTitle("제목")
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

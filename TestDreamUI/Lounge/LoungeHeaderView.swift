@@ -25,13 +25,12 @@ class LoungeHeaderView: UITableViewHeaderFooterView {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    private let seeAllButton = CustomButton("hello!")
+    private let seeAllButton = CustomButton("See All", .white, .systemMint)
     
     func setTitle(_ text: String) {
         titleLabel.text = text
     }
     
-    let aa = UIView()
     
     //MARK: - Setup Views
     
@@ -51,7 +50,7 @@ class LoungeHeaderView: UITableViewHeaderFooterView {
         addSubview(seeAllButton)
         seeAllButton.translatesAutoresizingMaskIntoConstraints = false
         seeAllButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
-        seeAllButton.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        seeAllButton.widthAnchor.constraint(equalToConstant: 80).isActive = true
         seeAllButton.topAnchor.constraint(equalTo: topAnchor, constant: 5).isActive = true
         seeAllButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
         

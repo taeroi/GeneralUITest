@@ -44,11 +44,8 @@ class CustomButton: UIView {
         
         addSubview(label)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.topAnchor.constraint(equalTo: topAnchor, constant: 10).isActive = true
-        label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5).isActive = true
-        label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10).isActive = true
-        label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5).isActive = true
-        
+        label.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        label.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
     }
     
     func setTitle(_ text: String) {
