@@ -83,13 +83,14 @@ extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
 //MARK: - Header
 
 extension LoungeViewController {
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let headerView = view as? LoungeHeaderView else { return }
+        headerView.setTitle("zz")
+    }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: loungeHeaderId) as? LoungeHeaderView else {
-            return UIView()
-        }
-        headerView.setTitleAndButton("제목", "버튼명")
-        return headerView
+        tableView.dequeueReusableHeaderFooterView(withIdentifier: loungeHeaderId) as? LoungeHeaderView
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

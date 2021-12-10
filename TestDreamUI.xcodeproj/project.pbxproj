@@ -10,6 +10,7 @@
 		647664AF275CF233001A7D7C /* LoungeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664AE275CF233001A7D7C /* LoungeCell.swift */; };
 		647664B1275CF24E001A7D7C /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */; };
 		647664B3275CF56D001A7D7C /* LoungeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B2275CF56D001A7D7C /* LoungeHeaderView.swift */; };
+		64B680C52762227D00971E4B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B680C42762227D00971E4B /* CustomButton.swift */; };
 		64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */; };
 		64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA2275C8F660003B170 /* LoungeViewController.swift */; };
 		64D7CCA5275C8F6D0003B170 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA4275C8F6D0003B170 /* MyViewController.swift */; };
@@ -57,6 +58,7 @@
 		647664AE275CF233001A7D7C /* LoungeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeCell.swift; sourceTree = "<group>"; };
 		647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		647664B2275CF56D001A7D7C /* LoungeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeHeaderView.swift; sourceTree = "<group>"; };
+		64B680C42762227D00971E4B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapbarViewController.swift; sourceTree = "<group>"; };
 		64D7CCA2275C8F660003B170 /* LoungeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeViewController.swift; sourceTree = "<group>"; };
 		64D7CCA4275C8F6D0003B170 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64B680C32762224C00971E4B /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				64B680C42762227D00971E4B /* CustomButton.swift */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
 		64D7CCA8275C90790003B170 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,14 +141,14 @@
 			path = My;
 			sourceTree = "<group>";
 		};
-		64D7CCAA275C90830003B170 /* Card */ = {
+		64D7CCAA275C90830003B170 /* Lounge */ = {
 			isa = PBXGroup;
 			children = (
 				64D7CCA2275C8F660003B170 /* LoungeViewController.swift */,
 				647664B2275CF56D001A7D7C /* LoungeHeaderView.swift */,
 				647664AE275CF233001A7D7C /* LoungeCell.swift */,
 			);
-			path = Card;
+			path = Lounge;
 			sourceTree = "<group>";
 		};
 		64D7CCB4275CAC070003B170 /* Keyword */ = {
@@ -198,9 +208,10 @@
 				64DD3FC327507C8A00160991 /* SceneDelegate.swift */,
 				64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */,
 				64D7CCA8275C90790003B170 /* Home */,
-				64D7CCAA275C90830003B170 /* Card */,
+				64D7CCAA275C90830003B170 /* Lounge */,
 				64D7CCA9275C907F0003B170 /* My */,
 				64DD3FFE275096BE00160991 /* BaseUI */,
+				64B680C32762224C00971E4B /* UIComponent */,
 				64D7CCB6275CAC8D0003B170 /* CollectionViewFlowLayout */,
 				64DD3FCD27507C8B00160991 /* Assets.xcassets */,
 				64DD3FCF27507C8B00160991 /* LaunchScreen.storyboard */,
@@ -370,6 +381,7 @@
 				64DD3FC627507C8A00160991 /* HomeViewController.swift in Sources */,
 				64D7CCAF275C94B90003B170 /* SecondRowColumnCell.swift in Sources */,
 				64DD3FFB275090AC00160991 /* BaseCollectionViewCell.swift in Sources */,
+				64B680C52762227D00971E4B /* CustomButton.swift in Sources */,
 				64DD3FF5275080D700160991 /* KeywordMenuTabBarView.swift in Sources */,
 				647664B1275CF24E001A7D7C /* BaseTableViewCell.swift in Sources */,
 				64DD3FC227507C8A00160991 /* AppDelegate.swift in Sources */,
@@ -557,6 +569,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y62JQKC4LG;
@@ -584,6 +597,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Y62JQKC4LG;

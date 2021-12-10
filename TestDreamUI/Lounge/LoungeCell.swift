@@ -34,6 +34,8 @@ final class LoungeCell: BaseTableViewCell {
     
     override func setupSubviews() {
         backgroundColor = .red
+        
+//        addSubview(<#T##view: UIView##UIView#>)
 //        let hStack = UIStackView()
 //        hStack.axis = .horizontal
 //        hStack.distribution = .fill

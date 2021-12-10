@@ -20,7 +20,6 @@ final class KeywordMenuCell: BaseCollectionViewCell {
     
     override var isSelected: Bool {
         didSet{
-            print("Changed")
             self.label.textColor = isSelected ? .black : .lightGray
         }
     }
