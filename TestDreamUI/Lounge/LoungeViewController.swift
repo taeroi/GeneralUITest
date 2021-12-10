@@ -49,8 +49,8 @@ final class LoungeViewController: BaseViewController   {
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.register(LoungeHeaderView.self, forHeaderFooterViewReuseIdentifier: loungeHeaderId)
-        tableView.register(LoungeCell.self, forCellReuseIdentifier: loungeCellId)
+        tableView.register(OneContentCell.self, forHeaderFooterViewReuseIdentifier: loungeHeaderId)
+        tableView.register(ThreeContentCell.self, forCellReuseIdentifier: loungeCellId)
     }
     
 }
@@ -85,16 +85,16 @@ extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
 extension LoungeViewController {
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        guard let headerView = view as? LoungeHeaderView else { return }
+        guard let headerView = view as? OneContentCell else { return }
         headerView.setTitle("제목")
     }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        tableView.dequeueReusableHeaderFooterView(withIdentifier: loungeHeaderId) as? LoungeHeaderView
+        tableView.dequeueReusableHeaderFooterView(withIdentifier: loungeHeaderId) as? OneContentCell
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 100
+        return 50
     }
 
 }

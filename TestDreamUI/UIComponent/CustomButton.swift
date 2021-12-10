@@ -17,8 +17,9 @@ class CustomButton: UIView {
     //MARK: - Initializer
     
     convenience init(_ title: String? = nil,
-                     _ titleColor: UIColor = .black,
-                     _ backgroundColor: UIColor = .purple) {
+                     font: UIFont = .systemFont(ofSize: 13),
+                     titleColor: UIColor = .black,
+                     backgroundColor: UIColor = .purple) {
         self.init(frame: .zero)
         
         self.label.text = title

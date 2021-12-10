@@ -1,5 +1,5 @@
 //
-//  LoungeCell.swift
+//  ThreeContentCell.swift
 //  TestDreamUI
 //
 //  Created by 박태환 on 2021/12/05.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class LoungeCell: BaseTableViewCell {
+final class ThreeContentCell: BaseTableViewCell {
     
     
     // ===== UI ======
@@ -33,7 +33,8 @@ final class LoungeCell: BaseTableViewCell {
     //MARK: - Setup Views
     
     override func setupSubviews() {
-        backgroundColor = .red
+        backgroundColor = .lightGray
+        
         
 //        addSubview(<#T##view: UIView##UIView#>)
 //        let hStack = UIStackView()
