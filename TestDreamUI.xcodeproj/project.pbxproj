@@ -10,11 +10,13 @@
 		647664AF275CF233001A7D7C /* ThreeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664AE275CF233001A7D7C /* ThreeContentCell.swift */; };
 		647664B1275CF24E001A7D7C /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */; };
 		647664B3275CF56D001A7D7C /* ThreeContentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B2275CF56D001A7D7C /* ThreeContentHeader.swift */; };
-		647C22D2276340B200A9F04A /* ConceptViewerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D1276340B200A9F04A /* ConceptViewerCell.swift */; };
+		647C22D2276340B200A9F04A /* QuickViewerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D1276340B200A9F04A /* QuickViewerCell.swift */; };
 		647C22D62763429B00A9F04A /* OneContentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D52763429B00A9F04A /* OneContentHeader.swift */; };
 		647C22D8276342B000A9F04A /* ConceptViewerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D7276342B000A9F04A /* ConceptViewerHeader.swift */; };
 		647C22DA276342BF00A9F04A /* OneContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D9276342BF00A9F04A /* OneContentCell.swift */; };
 		647FCA6C2765C28D007D3C6D /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647FCA6B2765C28D007D3C6D /* UITableView+Extension.swift */; };
+		647FCA6E2765C4B3007D3C6D /* LoungeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647FCA6D2765C4B3007D3C6D /* LoungeConstants.swift */; };
+		647FCA702765C6FE007D3C6D /* Lounge_DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647FCA6F2765C6FE007D3C6D /* Lounge_DetailViewController.swift */; };
 		64B680C52762227D00971E4B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B680C42762227D00971E4B /* CustomButton.swift */; };
 		64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */; };
 		64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA2275C8F660003B170 /* LoungeViewController.swift */; };
@@ -40,6 +42,15 @@
 		64DD3FF92750815400160991 /* SecondRowGridContentPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FF82750815400160991 /* SecondRowGridContentPageCell.swift */; };
 		64DD3FFB275090AC00160991 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FFA275090AC00160991 /* BaseCollectionViewCell.swift */; };
 		64DD3FFD2750927400160991 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DD3FFC2750927400160991 /* BaseViewController.swift */; };
+		64E8EFD62765CD8E00F6F78C /* OneContentInnerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFD52765CD8E00F6F78C /* OneContentInnerCollectionView.swift */; };
+		64E8EFD92765CE4300F6F78C /* ThreeContentInnerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFD82765CE4300F6F78C /* ThreeContentInnerCollectionView.swift */; };
+		64E8EFDB2765CE5000F6F78C /* ThreeContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFDA2765CE5000F6F78C /* ThreeContentCollectionViewCell.swift */; };
+		64E8EFDD2765CE7000F6F78C /* QuickViewerInnerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFDC2765CE7000F6F78C /* QuickViewerInnerTableView.swift */; };
+		64E8EFDF2765CEF600F6F78C /* OneContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFDE2765CEF600F6F78C /* OneContentCollectionViewCell.swift */; };
+		64E8EFE32765CFFE00F6F78C /* LoungeFlowlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFE22765CFFE00F6F78C /* LoungeFlowlayout.swift */; };
+		64E8EFE62765D0E700F6F78C /* OneContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFE52765D0E700F6F78C /* OneContentModel.swift */; };
+		64E8EFE82765D0F300F6F78C /* ThreeContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFE72765D0F300F6F78C /* ThreeContentModel.swift */; };
+		64E8EFEA2765D0FC00F6F78C /* ConceptViewerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFE92765D0FC00F6F78C /* ConceptViewerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,11 +74,13 @@
 		647664AE275CF233001A7D7C /* ThreeContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentCell.swift; sourceTree = "<group>"; };
 		647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		647664B2275CF56D001A7D7C /* ThreeContentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentHeader.swift; sourceTree = "<group>"; };
-		647C22D1276340B200A9F04A /* ConceptViewerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptViewerCell.swift; sourceTree = "<group>"; };
+		647C22D1276340B200A9F04A /* QuickViewerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickViewerCell.swift; sourceTree = "<group>"; };
 		647C22D52763429B00A9F04A /* OneContentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneContentHeader.swift; sourceTree = "<group>"; };
 		647C22D7276342B000A9F04A /* ConceptViewerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptViewerHeader.swift; sourceTree = "<group>"; };
 		647C22D9276342BF00A9F04A /* OneContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneContentCell.swift; sourceTree = "<group>"; };
 		647FCA6B2765C28D007D3C6D /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		647FCA6D2765C4B3007D3C6D /* LoungeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeConstants.swift; sourceTree = "<group>"; };
+		647FCA6F2765C6FE007D3C6D /* Lounge_DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lounge_DetailViewController.swift; sourceTree = "<group>"; };
 		64B680C42762227D00971E4B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapbarViewController.swift; sourceTree = "<group>"; };
 		64D7CCA2275C8F660003B170 /* LoungeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +110,15 @@
 		64DD3FF82750815400160991 /* SecondRowGridContentPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRowGridContentPageCell.swift; sourceTree = "<group>"; };
 		64DD3FFA275090AC00160991 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		64DD3FFC2750927400160991 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		64E8EFD52765CD8E00F6F78C /* OneContentInnerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneContentInnerCollectionView.swift; sourceTree = "<group>"; };
+		64E8EFD82765CE4300F6F78C /* ThreeContentInnerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentInnerCollectionView.swift; sourceTree = "<group>"; };
+		64E8EFDA2765CE5000F6F78C /* ThreeContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		64E8EFDC2765CE7000F6F78C /* QuickViewerInnerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickViewerInnerTableView.swift; sourceTree = "<group>"; };
+		64E8EFDE2765CEF600F6F78C /* OneContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		64E8EFE22765CFFE00F6F78C /* LoungeFlowlayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeFlowlayout.swift; sourceTree = "<group>"; };
+		64E8EFE52765D0E700F6F78C /* OneContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneContentModel.swift; sourceTree = "<group>"; };
+		64E8EFE72765D0F300F6F78C /* ThreeContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentModel.swift; sourceTree = "<group>"; };
+		64E8EFE92765D0FC00F6F78C /* ConceptViewerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptViewerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +149,9 @@
 		647C22D3276341D300A9F04A /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				647664AE275CF233001A7D7C /* ThreeContentCell.swift */,
-				647C22D9276342BF00A9F04A /* OneContentCell.swift */,
-				647C22D1276340B200A9F04A /* ConceptViewerCell.swift */,
+				64E8EFD22765CD3D00F6F78C /* OneContent */,
+				64E8EFD32765CD4300F6F78C /* ThreeContent */,
+				64E8EFD42765CD4A00F6F78C /* ConceptViewer */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -137,8 +159,8 @@
 		647C22D4276341D900A9F04A /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				647664B2275CF56D001A7D7C /* ThreeContentHeader.swift */,
 				647C22D52763429B00A9F04A /* OneContentHeader.swift */,
+				647664B2275CF56D001A7D7C /* ThreeContentHeader.swift */,
 				647C22D7276342B000A9F04A /* ConceptViewerHeader.swift */,
 			);
 			path = Headers;
@@ -165,6 +187,7 @@
 			children = (
 				64D7CCB2275C9C9A0003B170 /* NavigationPushable.swift */,
 				64DD3FC527507C8A00160991 /* HomeViewController.swift */,
+				64D7CCB0275C9BEB0003B170 /* ContentViewController.swift */,
 				64D7CCB4275CAC070003B170 /* Keyword */,
 				64D7CCB5275CAC0F0003B170 /* Content */,
 			);
@@ -183,6 +206,9 @@
 			isa = PBXGroup;
 			children = (
 				64D7CCA2275C8F660003B170 /* LoungeViewController.swift */,
+				647FCA6F2765C6FE007D3C6D /* Lounge_DetailViewController.swift */,
+				647FCA6D2765C4B3007D3C6D /* LoungeConstants.swift */,
+				64E8EFE42765D0D000F6F78C /* Models */,
 				647C22D4276341D900A9F04A /* Headers */,
 				647C22D3276341D300A9F04A /* Cells */,
 			);
@@ -205,7 +231,6 @@
 				64D7CCAE275C94B90003B170 /* SecondRowColumnCell.swift */,
 				64D7CCB9275CB0900003B170 /* MosaicGridContentPageCell.swift */,
 				64D7CCBB275CB11C0003B170 /* MosaicGridCell.swift */,
-				64D7CCB0275C9BEB0003B170 /* ContentViewController.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -213,8 +238,8 @@
 		64D7CCB6275CAC8D0003B170 /* CollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
-				64D7CCAC275C93E00003B170 /* SecondRowColumnFlowLayout.swift */,
-				64D7CCB7275CADA10003B170 /* MosaicGridFlowLayout.swift */,
+				64E8EFE02765CFDF00F6F78C /* Home */,
+				64E8EFE12765CFE700F6F78C /* Lounge */,
 			);
 			path = CollectionViewFlowLayout;
 			sourceTree = "<group>";
@@ -285,6 +310,62 @@
 				647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */,
 			);
 			path = BaseUI;
+			sourceTree = "<group>";
+		};
+		64E8EFD22765CD3D00F6F78C /* OneContent */ = {
+			isa = PBXGroup;
+			children = (
+				647C22D9276342BF00A9F04A /* OneContentCell.swift */,
+				64E8EFD52765CD8E00F6F78C /* OneContentInnerCollectionView.swift */,
+				64E8EFDE2765CEF600F6F78C /* OneContentCollectionViewCell.swift */,
+			);
+			path = OneContent;
+			sourceTree = "<group>";
+		};
+		64E8EFD32765CD4300F6F78C /* ThreeContent */ = {
+			isa = PBXGroup;
+			children = (
+				647664AE275CF233001A7D7C /* ThreeContentCell.swift */,
+				64E8EFD82765CE4300F6F78C /* ThreeContentInnerCollectionView.swift */,
+				64E8EFDA2765CE5000F6F78C /* ThreeContentCollectionViewCell.swift */,
+			);
+			path = ThreeContent;
+			sourceTree = "<group>";
+		};
+		64E8EFD42765CD4A00F6F78C /* ConceptViewer */ = {
+			isa = PBXGroup;
+			children = (
+				647C22D1276340B200A9F04A /* QuickViewerCell.swift */,
+				64E8EFDC2765CE7000F6F78C /* QuickViewerInnerTableView.swift */,
+			);
+			path = ConceptViewer;
+			sourceTree = "<group>";
+		};
+		64E8EFE02765CFDF00F6F78C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				64D7CCAC275C93E00003B170 /* SecondRowColumnFlowLayout.swift */,
+				64D7CCB7275CADA10003B170 /* MosaicGridFlowLayout.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		64E8EFE12765CFE700F6F78C /* Lounge */ = {
+			isa = PBXGroup;
+			children = (
+				64E8EFE22765CFFE00F6F78C /* LoungeFlowlayout.swift */,
+			);
+			path = Lounge;
+			sourceTree = "<group>";
+		};
+		64E8EFE42765D0D000F6F78C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64E8EFE52765D0E700F6F78C /* OneContentModel.swift */,
+				64E8EFE72765D0F300F6F78C /* ThreeContentModel.swift */,
+				64E8EFE92765D0FC00F6F78C /* ConceptViewerModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,19 +500,27 @@
 			files = (
 				64DD3FC627507C8A00160991 /* HomeViewController.swift in Sources */,
 				64D7CCAF275C94B90003B170 /* SecondRowColumnCell.swift in Sources */,
+				64E8EFD62765CD8E00F6F78C /* OneContentInnerCollectionView.swift in Sources */,
 				64DD3FFB275090AC00160991 /* BaseCollectionViewCell.swift in Sources */,
 				64B680C52762227D00971E4B /* CustomButton.swift in Sources */,
 				64DD3FF5275080D700160991 /* KeywordMenuTabBarView.swift in Sources */,
 				647664B1275CF24E001A7D7C /* BaseTableViewCell.swift in Sources */,
 				64DD3FC227507C8A00160991 /* AppDelegate.swift in Sources */,
-				647C22D2276340B200A9F04A /* ConceptViewerCell.swift in Sources */,
+				647C22D2276340B200A9F04A /* QuickViewerCell.swift in Sources */,
+				64E8EFE32765CFFE00F6F78C /* LoungeFlowlayout.swift in Sources */,
 				64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */,
+				64E8EFD92765CE4300F6F78C /* ThreeContentInnerCollectionView.swift in Sources */,
 				647664B3275CF56D001A7D7C /* ThreeContentHeader.swift in Sources */,
 				64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */,
 				647C22DA276342BF00A9F04A /* OneContentCell.swift in Sources */,
 				64D7CCB3275C9C9A0003B170 /* NavigationPushable.swift in Sources */,
+				647FCA702765C6FE007D3C6D /* Lounge_DetailViewController.swift in Sources */,
 				647C22D62763429B00A9F04A /* OneContentHeader.swift in Sources */,
+				64E8EFDF2765CEF600F6F78C /* OneContentCollectionViewCell.swift in Sources */,
+				647FCA6E2765C4B3007D3C6D /* LoungeConstants.swift in Sources */,
+				64E8EFDB2765CE5000F6F78C /* ThreeContentCollectionViewCell.swift in Sources */,
 				647C22D8276342B000A9F04A /* ConceptViewerHeader.swift in Sources */,
+				64E8EFDD2765CE7000F6F78C /* QuickViewerInnerTableView.swift in Sources */,
 				64DD3FC427507C8A00160991 /* SceneDelegate.swift in Sources */,
 				647664AF275CF233001A7D7C /* ThreeContentCell.swift in Sources */,
 				64DD3FFD2750927400160991 /* BaseViewController.swift in Sources */,
@@ -439,8 +528,11 @@
 				64D7CCAD275C93E00003B170 /* SecondRowColumnFlowLayout.swift in Sources */,
 				64D7CCBC275CB11C0003B170 /* MosaicGridCell.swift in Sources */,
 				64D7CCB1275C9BEB0003B170 /* ContentViewController.swift in Sources */,
+				64E8EFE62765D0E700F6F78C /* OneContentModel.swift in Sources */,
 				64DD3FF72750812900160991 /* KeywordMenuCell.swift in Sources */,
+				64E8EFE82765D0F300F6F78C /* ThreeContentModel.swift in Sources */,
 				647FCA6C2765C28D007D3C6D /* UITableView+Extension.swift in Sources */,
+				64E8EFEA2765D0FC00F6F78C /* ConceptViewerModel.swift in Sources */,
 				64DD3FF92750815400160991 /* SecondRowGridContentPageCell.swift in Sources */,
 				64D7CCA5275C8F6D0003B170 /* MyViewController.swift in Sources */,
 				64D7CCB8275CADA10003B170 /* MosaicGridFlowLayout.swift in Sources */,

@@ -19,10 +19,6 @@ final class LoungeViewController: BaseViewController   {
     private let threeContentHeaderId = "threeContentHeaderId"
     private let oneContentHeaderId = "oneContentHeaderId"
     private let conceptViewerHeaderId = "conceptViewerHeaderId"
-    // --- Cell ---
-    private let threeContentCellId = "threeContentCellId"
-    private let oneContentCellId = "oneContentCellId"
-    private let conceptViewerCellId = "conceptViewerCellId"
     
     
     //MARK: - Life Cycles
@@ -55,13 +51,21 @@ final class LoungeViewController: BaseViewController   {
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.registerClassCell(ThreeContentCell.self)
+        tableView.registerClassCell(OneContentCell.self)
+        tableView.registerClassCell(QuickViewerCell.self)
+
         tableView.register(ThreeContentHeader.self, forHeaderFooterViewReuseIdentifier: threeContentHeaderId)
         tableView.register(OneContentHeader.self, forHeaderFooterViewReuseIdentifier: oneContentHeaderId)
         tableView.register(ConceptViewerHeader.self, forHeaderFooterViewReuseIdentifier: conceptViewerHeaderId)
-        
-        tableView.register(ThreeContentCell.self, forCellReuseIdentifier: threeContentCellId)
-        tableView.register(OneContentCell.self, forCellReuseIdentifier: oneContentCellId)
-        tableView.register(ConceptViewerCell.self, forCellReuseIdentifier: conceptViewerCellId)
+    }
+    
+    
+    //MARK: - UI Action
+    
+    private func pushToDetailViewController(_ indexPath: IndexPath) {
+        let loungeDetailVC = LoungeDetailViewController(indexPath: indexPath)
+        navigationController?.pushViewController(loungeDetailVC, animated: true)
     }
     
 }
@@ -72,20 +76,53 @@ final class LoungeViewController: BaseViewController   {
 extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        10
+        3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        1
+        switch section {
+        case 0, 1, 2:
+            return 1
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.dequeueReusableCell(withIdentifier: threeContentCellId, for: indexPath)
-            
+        
+        switch indexPath.section {
+        case 0:
+            let cell = tableView.dequeueReusable(OneContentCell.self, for: indexPath)
+            cell.pushClosure = { [weak self] innerContentindexPath in
+                self?.pushToDetailViewController(innerContentindexPath)
+            }
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusable(ThreeContentCell.self, for: indexPath)
+            cell.pushClosure = { [weak self] innerContentindexPath in
+                self?.pushToDetailViewController(innerContentindexPath)
+            }
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusable(QuickViewerCell.self, for: indexPath)
+            cell.pushClosure = { [weak self] innerContentindexPath in
+                self?.pushToDetailViewController(innerContentindexPath)
+            }
+            return cell
+        default:
+            return UITableViewCell()
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        if indexPath.section == 0 {
+            return LoungeConstants.oneContentCellHeight
+        } else if indexPath.section == 1 {
+            return LoungeConstants.ThreeContentCellHeight
+        } else if indexPath.section == 2 {
+            return LoungeConstants.QuickViewerCellHeight
+        }
+        return 0
     }
     
 }

@@ -9,7 +9,8 @@ import UIKit
 
 final class ThreeContentCell: BaseTableViewCell {
     
-    
+    var pushClosure: ((_ indexPath: IndexPath)->())?
+
     // ===== UI ======
     private let iconImageView: UIImageView = {
        let imageView = UIImageView()
