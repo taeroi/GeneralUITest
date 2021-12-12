@@ -9,6 +9,7 @@ import UIKit
 
 class DefaultContentHeader: UITableViewHeaderFooterView {
     
+    var pushAction: (() -> ())?
     
     // ===== UI =====
     private lazy var topLine: UIView = {
@@ -31,6 +32,9 @@ class DefaultContentHeader: UITableViewHeaderFooterView {
         titleColor: .white,
         backgroundColor: .systemMint
     )
+    
+    // ===== Properties =====
+    var seeAllButtonTap: UITapGestureRecognizer!
     
     
     //MARK: - Setup Views
@@ -72,3 +76,27 @@ class DefaultContentHeader: UITableViewHeaderFooterView {
     }
     
 }
+
+
+//MARK: - Tap Gesture
+
+extension DefaultContentHeader {
+    
+    func connectGesture() {
+        seeAllButtonTap = UITapGestureRecognizer(target: self, action: #selector(handleSeeAllButtonTapped))
+        seeAllButton.addGestureRecognizer(seeAllButtonTap)
+    }
+    
+    func disconnectGesture() {
+        seeAllButton.removeGestureRecognizer(seeAllButtonTap)
+        seeAllButtonTap = nil
+    }
+    
+    
+    @objc
+    func handleSeeAllButtonTapped() {
+        pushAction?()
+    }
+    
+}
+

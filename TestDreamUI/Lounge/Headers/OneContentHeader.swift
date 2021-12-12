@@ -9,7 +9,7 @@ import UIKit
 
 final class OneContentHeader: UITableViewHeaderFooterView {
     
-    var presentClouser: (() -> ())?
+    var presentAction: (() -> ())?
     
     // ===== UI =====
     private let titleLabel: UILabel = {
@@ -28,14 +28,12 @@ final class OneContentHeader: UITableViewHeaderFooterView {
         button.layer.borderColor = LoungeConstants.iconBorderColor
         button.layer.borderWidth =  LoungeConstants.iconBorderWidth
         button.layer.cornerRadius = LoungeConstants.iconCornerRadius
-        button.addTarget(self, action: #selector(presentViewController), for: .touchUpInside)
         return button
     }()
     
-    @objc
-    func presentViewController() {
-        presentClouser?()
-    }
+    
+    // ===== Properties =====
+    var userImageTap: UITapGestureRecognizer!
     
     
     //MARK: - Setup Views
@@ -66,6 +64,29 @@ final class OneContentHeader: UITableViewHeaderFooterView {
     
     func setTitle(_ text: String) {
         titleLabel.text = text
+    }
+    
+}
+
+
+//MARK: - Tap Gesture
+
+extension OneContentHeader {
+    
+    func connectGesture() {
+        userImageTap = UITapGestureRecognizer(target: self, action: #selector(presentViewController))
+        userIconButton.addGestureRecognizer(userImageTap)
+    }
+    
+    func disconnectGesture() {
+        userIconButton.removeGestureRecognizer(userImageTap)
+        userImageTap = nil
+    }
+    
+    
+    @objc
+    func presentViewController() {
+        presentAction?()
     }
     
 }
