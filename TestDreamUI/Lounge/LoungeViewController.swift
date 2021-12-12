@@ -145,7 +145,7 @@ extension LoungeViewController {
         switch section {
         case 0:
             let headerView = tableView.dequeueReusableHeaderFooterView(OneContentHeader.self)
-            headerView.setTitle("First Title")
+            headerView.setTitle("Title")
             headerView.presentClouser = { [weak self] in
                 self?.presentUserInfoViewController()
             }

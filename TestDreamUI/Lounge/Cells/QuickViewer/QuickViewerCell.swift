@@ -28,7 +28,6 @@ final class QuickViewerCell: BaseTableViewCell {
     
     override func setupSubviews() {
         contentView.addSubview(innerTableView)
-        backgroundColor = .white
     }
     
 }
@@ -50,6 +49,7 @@ extension QuickViewerCell: UITableViewDataSource, UITableViewDelegate {
         cell.textLabel?.text = QuickViewerInnerMockDataResource[indexPath.row]
         cell.textLabel?.textColor = .systemBlue
         cell.textLabel?.font = UIFont.systemFont(ofSize: 22)
+        cell.selectionStyle = .none
 
         return cell
     }

@@ -7,26 +7,12 @@
 
 import UIKit
 
-final class ThreeContentInnerCollectionView: UICollectionView {
-    
-    
-    //MARK: - Initalizer
-    
-    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
-        super.init(frame: frame, collectionViewLayout: layout)
-        backgroundColor = .white
-
-        register()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+final class ThreeContentInnerCollectionView: BaseCollectionView {
     
     
     //MARK: - Register
     
-    private func register() {
+    override func registerCollectionView() {
         
         decelerationRate = UIScrollView.DecelerationRate.fast
         registerClassCell(ThreeContentCollectionViewCell.self)

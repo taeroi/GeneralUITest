@@ -13,7 +13,7 @@ final class OneContentCell: BaseTableViewCell {
  
     private lazy var oneContentInnerCollectionView: OneContentInnerCollectionView = {
         let itemSize = CGSize(
-            width: screenWidth - 2 * LoungeConstants.leftMargin,
+            width: screenWidth - 3 * LoungeConstants.leftMargin,
             height: LoungeConstants.oneContentCellHeight
         )
         let frame = CGRect(
