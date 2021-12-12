@@ -46,8 +46,7 @@ final class LoungeViewController: BaseViewController   {
         tableView.dataSource = self
         
         tableView.registerClassHeaderFooterView(OneContentHeader.self)
-        tableView.registerClassHeaderFooterView(ThreeContentHeader.self)
-        tableView.registerClassHeaderFooterView(ConceptViewerHeader.self)
+        tableView.registerClassHeaderFooterView(DefaultContentHeader.self)
         
         tableView.registerClassCell(ThreeContentCell.self)
         tableView.registerClassCell(OneContentCell.self)
@@ -151,19 +150,25 @@ extension LoungeViewController {
             }
             return headerView
         case 1:
-            let headerView = tableView.dequeueReusableHeaderFooterView(ThreeContentHeader.self)
-            return headerView
+            let secondHeaderView = tableView.dequeueReusableHeaderFooterView(DefaultContentHeader.self)
+            secondHeaderView.setTitle("Second Title")
+            return secondHeaderView
         case 2:
-            let headerView = tableView.dequeueReusableHeaderFooterView(ThreeContentHeader.self)
-            return headerView
+            let thirdHeaderView = tableView.dequeueReusableHeaderFooterView(DefaultContentHeader.self)
+            thirdHeaderView.setTitle("Third Title")
+            return thirdHeaderView
         default:
-            let headerView = tableView.dequeueReusableHeaderFooterView(ThreeContentHeader.self)
-            return headerView
+            return UIView()
         }
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 80
+        switch section {
+        case 0:
+            return LoungeConstants.oneContentHeaderHeight
+        default:
+            return LoungeConstants.defaultContentHeaderHeight
+        }
     }
     
 }

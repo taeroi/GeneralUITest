@@ -16,7 +16,7 @@ final class QuickViewerCell: BaseTableViewCell {
     private lazy var innerTableView: QuickViewerInnerTableView = {
         let frame = CGRect(
             x: 0,
-            y: 42,
+            y: 0,
             width: screenWidth,
             height: LoungeConstants.quickViewerCellHeight * CGFloat(QuickViewerInnerMockDataResource.count)
         )

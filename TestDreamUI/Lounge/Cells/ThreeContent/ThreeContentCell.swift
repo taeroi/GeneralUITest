@@ -22,7 +22,7 @@ final class ThreeContentCell: BaseTableViewCell {
         )
         let frame = CGRect(
             x: 0,
-            y: 42,
+            y: 0,
             width: screenWidth,
             height: 80 * 3
         )

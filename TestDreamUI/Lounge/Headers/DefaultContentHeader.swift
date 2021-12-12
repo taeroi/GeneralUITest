@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThreeContentHeader: UITableViewHeaderFooterView {
+class DefaultContentHeader: UITableViewHeaderFooterView {
     
     
     // ===== UI =====
@@ -21,7 +21,7 @@ class ThreeContentHeader: UITableViewHeaderFooterView {
         let label = UILabel()
         label.textColor = .black
         label.textAlignment = .left
-        label.font = .systemFont(ofSize: 20, weight: .bold)
+        label.font = .systemFont(ofSize: 25, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()

@@ -16,7 +16,6 @@ final class ThreeContentInnerCollectionView: BaseCollectionView {
         
         decelerationRate = UIScrollView.DecelerationRate.fast
         registerClassCell(ThreeContentCollectionViewCell.self)
-        showsHorizontalScrollIndicator = false
     }
     
 }

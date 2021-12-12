@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		647664AF275CF233001A7D7C /* ThreeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664AE275CF233001A7D7C /* ThreeContentCell.swift */; };
 		647664B1275CF24E001A7D7C /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */; };
-		647664B3275CF56D001A7D7C /* ThreeContentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B2275CF56D001A7D7C /* ThreeContentHeader.swift */; };
+		647664B3275CF56D001A7D7C /* DefaultContentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B2275CF56D001A7D7C /* DefaultContentHeader.swift */; };
 		647C22D2276340B200A9F04A /* QuickViewerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D1276340B200A9F04A /* QuickViewerCell.swift */; };
 		647C22D62763429B00A9F04A /* OneContentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D52763429B00A9F04A /* OneContentHeader.swift */; };
-		647C22D8276342B000A9F04A /* ConceptViewerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D7276342B000A9F04A /* ConceptViewerHeader.swift */; };
 		647C22DA276342BF00A9F04A /* OneContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647C22D9276342BF00A9F04A /* OneContentCell.swift */; };
 		647FCA6C2765C28D007D3C6D /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647FCA6B2765C28D007D3C6D /* UITableView+Extension.swift */; };
 		647FCA6E2765C4B3007D3C6D /* LoungeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647FCA6D2765C4B3007D3C6D /* LoungeConstants.swift */; };
@@ -77,10 +76,9 @@
 /* Begin PBXFileReference section */
 		647664AE275CF233001A7D7C /* ThreeContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentCell.swift; sourceTree = "<group>"; };
 		647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		647664B2275CF56D001A7D7C /* ThreeContentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentHeader.swift; sourceTree = "<group>"; };
+		647664B2275CF56D001A7D7C /* DefaultContentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultContentHeader.swift; sourceTree = "<group>"; };
 		647C22D1276340B200A9F04A /* QuickViewerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickViewerCell.swift; sourceTree = "<group>"; };
 		647C22D52763429B00A9F04A /* OneContentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneContentHeader.swift; sourceTree = "<group>"; };
-		647C22D7276342B000A9F04A /* ConceptViewerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptViewerHeader.swift; sourceTree = "<group>"; };
 		647C22D9276342BF00A9F04A /* OneContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneContentCell.swift; sourceTree = "<group>"; };
 		647FCA6B2765C28D007D3C6D /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		647FCA6D2765C4B3007D3C6D /* LoungeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeConstants.swift; sourceTree = "<group>"; };
@@ -168,8 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				647C22D52763429B00A9F04A /* OneContentHeader.swift */,
-				647664B2275CF56D001A7D7C /* ThreeContentHeader.swift */,
-				647C22D7276342B000A9F04A /* ConceptViewerHeader.swift */,
+				647664B2275CF56D001A7D7C /* DefaultContentHeader.swift */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -525,7 +522,7 @@
 				64B66FA92766378D00224BDB /* BaseCollectionView.swift in Sources */,
 				64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */,
 				64E8EFD92765CE4300F6F78C /* ThreeContentInnerCollectionView.swift in Sources */,
-				647664B3275CF56D001A7D7C /* ThreeContentHeader.swift in Sources */,
+				647664B3275CF56D001A7D7C /* DefaultContentHeader.swift in Sources */,
 				64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */,
 				647C22DA276342BF00A9F04A /* OneContentCell.swift in Sources */,
 				64D7CCB3275C9C9A0003B170 /* NavigationPushable.swift in Sources */,
@@ -535,7 +532,6 @@
 				647FCA6E2765C4B3007D3C6D /* LoungeConstants.swift in Sources */,
 				64B66FA72766378500224BDB /* BaseTableView.swift in Sources */,
 				64E8EFDB2765CE5000F6F78C /* ThreeContentCollectionViewCell.swift in Sources */,
-				647C22D8276342B000A9F04A /* ConceptViewerHeader.swift in Sources */,
 				64E8EFDD2765CE7000F6F78C /* QuickViewerInnerTableView.swift in Sources */,
 				64DD3FC427507C8A00160991 /* SceneDelegate.swift in Sources */,
 				647664AF275CF233001A7D7C /* ThreeContentCell.swift in Sources */,
