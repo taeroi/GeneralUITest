@@ -9,9 +9,8 @@ import UIKit
 
 final class ThreeContentCell: BaseTableViewCell {
    
-    
-    var pushClosure: ((_ indexPath: IndexPath)->())?
-    var getClosure: ((_ model: ThreeContentModel) -> ())?
+        var pushAction: ((_ indexPath: IndexPath)->())?
+    var pressedGetButtonAction: ((_ model: ThreeContentModel) -> ())?
 
     
     // ===== UI ======
@@ -67,16 +66,16 @@ extension ThreeContentCell: UICollectionViewDataSource, UICollectionViewDelegate
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        pushClosure?(indexPath)
+        pushAction?(indexPath)
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let cell = collectionView.dequeueReusable(ThreeContentCollectionViewCell.self, for: indexPath)
+        guard let cell = cell as? ThreeContentCollectionViewCell else { return }
         cell.connectGesture()
     }
     
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let cell = collectionView.dequeueReusable(ThreeContentCollectionViewCell.self, for: indexPath)
+        guard let cell = cell as? ThreeContentCollectionViewCell else { return }
         cell.disconnectGesture()
     }
     
@@ -89,7 +88,7 @@ extension ThreeContentCell: ButtonTouchable {
     
     func handleDownloadButtonTapped(_ cell: ThreeContentCollectionViewCell) {
         guard let indexPath = threeContentInnerCollectionView.indexPath(for: cell) else { return }
-        getClosure?(ThreeContentDataResource[indexPath.item])
+        pressedGetButtonAction?(ThreeContentDataResource[indexPath.item])
     }
     
 }

@@ -97,16 +97,16 @@ extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusable(OneContentCell.self, for: indexPath)
-            cell.pushClosure = { [weak self] innerContentindexPath in
+            cell.pushAction = { [weak self] innerContentindexPath in
                 self?.pushToDetailViewController(innerContentindexPath)
             }
             return cell
         case 1:
             let cell = tableView.dequeueReusable(ThreeContentCell.self, for: indexPath)
-            cell.pushClosure = { [weak self] innerContentindexPath in
+            cell.pushAction = { [weak self] innerContentindexPath in
                 self?.pushToDetailViewController(innerContentindexPath)
             }
-            cell.getClosure = { [weak self] model in
+            cell.pressedGetButtonAction = { [weak self] model in
                print("Get :: \(model)")
             }
             return cell

@@ -9,7 +9,7 @@ import UIKit
 
 final class OneContentCell: BaseTableViewCell {
     
-    var pushClosure: ((_ indexPath: IndexPath) -> ())?
+    var pushAction: ((_ indexPath: IndexPath) -> ())?
  
     private lazy var oneContentInnerCollectionView: OneContentInnerCollectionView = {
         let itemSize = CGSize(
@@ -60,7 +60,7 @@ extension OneContentCell: UICollectionViewDataSource,UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        pushClosure?(indexPath)
+        pushAction?(indexPath)
     }
     
 }

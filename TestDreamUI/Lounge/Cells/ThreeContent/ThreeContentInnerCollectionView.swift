@@ -9,6 +9,7 @@ import UIKit
 
 final class ThreeContentInnerCollectionView: UICollectionView {
     
+    
     //MARK: - Initalizer
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
