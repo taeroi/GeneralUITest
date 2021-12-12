@@ -8,50 +8,88 @@
 import UIKit
 
 final class ThreeContentCell: BaseTableViewCell {
+   
     
     var pushClosure: ((_ indexPath: IndexPath)->())?
+    var getClosure: ((_ model: ThreeContentModel) -> ())?
 
+    
     // ===== UI ======
-    private let iconImageView: UIImageView = {
-       let imageView = UIImageView()
-        imageView.layer.cornerRadius = 4
-        imageView.image = nil
-        return imageView
-    }()
-    private let titleLabel: UILabel = {
-       let label = UILabel()
-        label.font = .systemFont(ofSize: 14, weight: .semibold)
-        return label
-    }()
-    private let subTitleLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .lightGray
-        label.font = .systemFont(ofSize: 10, weight: .semibold)
-        return label
+    
+    private lazy var threeContentInnerCollectionView: ThreeContentInnerCollectionView = {
+        let itemSize = CGSize(
+            width: screenWidth - 2 * LoungeConstants.leftMargin,
+            height: 80
+        )
+        let frame = CGRect(
+            x: 0,
+            y: 42,
+            width: screenWidth,
+            height: 80 * 3
+        )
+        let layout = LoungeFlowlayout(itemSize: itemSize)
+        let collectionView = ThreeContentInnerCollectionView(
+            frame: frame,
+            collectionViewLayout: layout
+        )
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        return collectionView
     }()
     
     
-    //MARK: - Setup Views
-    
+    //MARK: - Setup Subviews
+
     override func setupSubviews() {
-        backgroundColor = .lightGray
-        
-        
-//        addSubview(<#T##view: UIView##UIView#>)
-//        let hStack = UIStackView()
-//        hStack.axis = .horizontal
-//        hStack.distribution = .fill
-//        hStack.alignment = .leading
-//        hStack.spacing = 4
-//        hStack.addSubview(titleLabel)
-//        hStack.addSubview(subTitleLabel)
-//
-//        addSubview(hStack)
-//        hStack.topAnchor.constraint(equalTo: topAnchor).isActive = true
-//        hStack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
-//        hStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 20).isActive = true
-        
+        contentView.addSubview(threeContentInnerCollectionView)
     }
     
+}
+
+
+//MARK: - CollectionView Setup
+
+extension ThreeContentCell: UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard collectionView == threeContentInnerCollectionView else { return 0 }
+        return ThreeContentDataResource.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard collectionView == threeContentInnerCollectionView else { return UICollectionViewCell() }
+        
+        let cell = collectionView.dequeueReusable(ThreeContentCollectionViewCell.self, for: indexPath)
+        cell.delegate = self
+        cell.model = ThreeContentDataResource[indexPath.row]
+        cell.bottomLineView.isHidden = (((indexPath.row + 1) % 3 == 0) || (indexPath.row == ThreeContentDataResource.count - 1))
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        pushClosure?(indexPath)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusable(ThreeContentCollectionViewCell.self, for: indexPath)
+        cell.connectGesture()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusable(ThreeContentCollectionViewCell.self, for: indexPath)
+        cell.disconnectGesture()
+    }
+    
+}
+
+
+//MARK: - Touch Delegate
+
+extension ThreeContentCell: ButtonTouchable {
+    
+    func handleDownloadButtonTapped(_ cell: ThreeContentCollectionViewCell) {
+        guard let indexPath = threeContentInnerCollectionView.indexPath(for: cell) else { return }
+        getClosure?(ThreeContentDataResource[indexPath.item])
+    }
     
 }

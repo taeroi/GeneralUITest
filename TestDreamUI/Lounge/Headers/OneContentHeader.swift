@@ -20,7 +20,7 @@ final class OneContentHeader: UITableViewHeaderFooterView {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    private let userButton: UIButton = {
+    private let userIconButton: UIButton = {
         let button = UIButton()
 //        button.setImage(#imageLiteral(resourceName: "square.and.arrow.up"), for: .normal)
 //        button.setImage(#imageLiteral(resourceName: "square.and.arrow.up"), for: .highlighted)
@@ -47,9 +47,11 @@ final class OneContentHeader: UITableViewHeaderFooterView {
         titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
         
-        addSubview(userButton)
-        userButton.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        userButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
+        addSubview(userIconButton)
+        userIconButton.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        userIconButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
+        userIconButton.widthAnchor.constraint(equalToConstant: 35).isActive = true
+        userIconButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
     }
     
     override init(reuseIdentifier: String?) {

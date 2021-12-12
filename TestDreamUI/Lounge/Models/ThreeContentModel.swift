@@ -9,6 +9,6 @@ import Foundation
 
 struct ThreeContentModel {
     let name: String
-    let desc: String
+    let description: String
     let iconImageName: String
 }

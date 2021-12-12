@@ -75,7 +75,7 @@ extension LoungeViewController {
 }
 
 
-//MARK: - DataSource & Delegate
+//MARK: - CollectionView Setup
 
 extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
     
@@ -106,6 +106,9 @@ extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
             cell.pushClosure = { [weak self] innerContentindexPath in
                 self?.pushToDetailViewController(innerContentindexPath)
             }
+            cell.getClosure = { [weak self] model in
+               print("Get :: \(model)")
+            }
             return cell
         case 2:
             let cell = tableView.dequeueReusable(QuickViewerCell.self, for: indexPath)
@@ -134,7 +137,7 @@ extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 
-//MARK: - Header
+//MARK: - CollectionView Header
 
 extension LoungeViewController {
 
@@ -157,11 +160,10 @@ extension LoungeViewController {
             let headerView = tableView.dequeueReusableHeaderFooterView(ThreeContentHeader.self)
             return headerView
         }
-        
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 80
     }
-
+    
 }

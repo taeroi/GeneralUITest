@@ -52,6 +52,7 @@
 		64E8EFE82765D0F300F6F78C /* ThreeContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFE72765D0F300F6F78C /* ThreeContentModel.swift */; };
 		64E8EFEA2765D0FC00F6F78C /* ConceptViewerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFE92765D0FC00F6F78C /* ConceptViewerModel.swift */; };
 		64E8EFEC2765E1DF00F6F78C /* LoungeUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFEB2765E1DF00F6F78C /* LoungeUserInfoViewController.swift */; };
+		64E8EFEF2765EFDE00F6F78C /* MockDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFEE2765EFDE00F6F78C /* MockDatas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,7 @@
 		64E8EFE72765D0F300F6F78C /* ThreeContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentModel.swift; sourceTree = "<group>"; };
 		64E8EFE92765D0FC00F6F78C /* ConceptViewerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptViewerModel.swift; sourceTree = "<group>"; };
 		64E8EFEB2765E1DF00F6F78C /* LoungeUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeUserInfoViewController.swift; sourceTree = "<group>"; };
+		64E8EFEE2765EFDE00F6F78C /* MockDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +369,7 @@
 				64E8EFE52765D0E700F6F78C /* OneContentModel.swift */,
 				64E8EFE72765D0F300F6F78C /* ThreeContentModel.swift */,
 				64E8EFE92765D0FC00F6F78C /* ConceptViewerModel.swift */,
+				64E8EFEE2765EFDE00F6F78C /* MockDatas.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				64DD3FC227507C8A00160991 /* AppDelegate.swift in Sources */,
 				647C22D2276340B200A9F04A /* QuickViewerCell.swift in Sources */,
 				64E8EFE32765CFFE00F6F78C /* LoungeFlowlayout.swift in Sources */,
+				64E8EFEF2765EFDE00F6F78C /* MockDatas.swift in Sources */,
 				64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */,
 				64E8EFD92765CE4300F6F78C /* ThreeContentInnerCollectionView.swift in Sources */,
 				647664B3275CF56D001A7D7C /* ThreeContentHeader.swift in Sources */,
