@@ -51,6 +51,7 @@
 		64E8EFE62765D0E700F6F78C /* OneContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFE52765D0E700F6F78C /* OneContentModel.swift */; };
 		64E8EFE82765D0F300F6F78C /* ThreeContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFE72765D0F300F6F78C /* ThreeContentModel.swift */; };
 		64E8EFEA2765D0FC00F6F78C /* ConceptViewerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFE92765D0FC00F6F78C /* ConceptViewerModel.swift */; };
+		64E8EFEC2765E1DF00F6F78C /* LoungeUserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8EFEB2765E1DF00F6F78C /* LoungeUserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		64E8EFE52765D0E700F6F78C /* OneContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneContentModel.swift; sourceTree = "<group>"; };
 		64E8EFE72765D0F300F6F78C /* ThreeContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentModel.swift; sourceTree = "<group>"; };
 		64E8EFE92765D0FC00F6F78C /* ConceptViewerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptViewerModel.swift; sourceTree = "<group>"; };
+		64E8EFEB2765E1DF00F6F78C /* LoungeUserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeUserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				64D7CCA2275C8F660003B170 /* LoungeViewController.swift */,
+				64E8EFEB2765E1DF00F6F78C /* LoungeUserInfoViewController.swift */,
 				647FCA6F2765C6FE007D3C6D /* Lounge_DetailViewController.swift */,
 				647FCA6D2765C4B3007D3C6D /* LoungeConstants.swift */,
 				64E8EFE42765D0D000F6F78C /* Models */,
@@ -503,6 +506,7 @@
 				64E8EFD62765CD8E00F6F78C /* OneContentInnerCollectionView.swift in Sources */,
 				64DD3FFB275090AC00160991 /* BaseCollectionViewCell.swift in Sources */,
 				64B680C52762227D00971E4B /* CustomButton.swift in Sources */,
+				64E8EFEC2765E1DF00F6F78C /* LoungeUserInfoViewController.swift in Sources */,
 				64DD3FF5275080D700160991 /* KeywordMenuTabBarView.swift in Sources */,
 				647664B1275CF24E001A7D7C /* BaseTableViewCell.swift in Sources */,
 				64DD3FC227507C8A00160991 /* AppDelegate.swift in Sources */,

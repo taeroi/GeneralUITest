@@ -9,27 +9,33 @@ import UIKit
 
 final class OneContentHeader: UITableViewHeaderFooterView {
     
+    var presentClouser: (() -> ())?
+    
     // ===== UI =====
-    private lazy var topLine: UIView = {
-       let view = UIView()
-        view.backgroundColor = .lightGray
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black
         label.textAlignment = .left
-        label.font = .systemFont(ofSize: 20, weight: .bold)
+        label.font = .systemFont(ofSize: 30, weight: .bold)
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-    private let seeAllButton = CustomButton(
-        "See All",
-        font: .systemFont(ofSize: 12, weight: .bold),
-        titleColor: .white,
-        backgroundColor: .systemMint
-    )
+    private let userButton: UIButton = {
+        let button = UIButton()
+//        button.setImage(#imageLiteral(resourceName: "square.and.arrow.up"), for: .normal)
+//        button.setImage(#imageLiteral(resourceName: "square.and.arrow.up"), for: .highlighted)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.layer.borderColor = LoungeConstants.iconBorderColor
+        button.layer.borderWidth =  LoungeConstants.iconBorderWidth
+        button.layer.cornerRadius = LoungeConstants.iconCornerRadius
+        button.addTarget(self, action: #selector(presentViewController), for: .touchUpInside)
+        return button
+    }()
+    
+    @objc
+    func presentViewController() {
+        presentClouser?()
+    }
     
     
     //MARK: - Setup Views
@@ -37,23 +43,13 @@ final class OneContentHeader: UITableViewHeaderFooterView {
     private func setupViews() {
         layer.masksToBounds = true
         
-        addSubview(topLine)
-        topLine.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        topLine.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
-        topLine.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
-        topLine.heightAnchor.constraint(equalToConstant: 1).isActive = true
-        
         addSubview(titleLabel)
         titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20).isActive = true
         
-        addSubview(seeAllButton)
-        seeAllButton.translatesAutoresizingMaskIntoConstraints = false
-        seeAllButton.heightAnchor.constraint(equalToConstant: 35).isActive = true
-        seeAllButton.widthAnchor.constraint(equalToConstant: 65).isActive = true
-        
-        seeAllButton.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
-        seeAllButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
+        addSubview(userButton)
+        userButton.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
+        userButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20).isActive = true
     }
     
     override init(reuseIdentifier: String?) {

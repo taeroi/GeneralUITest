@@ -13,7 +13,7 @@ enum LoungeConstants {
     
     static let toDayCardRowH: CGFloat = 440
     static let toDayCardCornerRadius: CGFloat = 15.0
-    static let todayCardSize: CGSize = CGSize(width: kScreenW - 2 * 20, height: 410)
+    static let todayCardSize: CGSize = CGSize(width: scrrenWidth - 2 * 20, height: 410)
  
     static let cardDetailTopImageH: CGFloat = 500
     
@@ -39,5 +39,5 @@ enum LoungeConstants {
     static let clickBarWidth: CGFloat = 6
 }
 
-let kScreenH = UIScreen.main.bounds.size.height
-let kScreenW = UIScreen.main.bounds.size.width
+let screenHeight = UIScreen.main.bounds.size.height
+let scrrenWidth = UIScreen.main.bounds.size.width

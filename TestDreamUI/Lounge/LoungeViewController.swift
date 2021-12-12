@@ -14,12 +14,6 @@ final class LoungeViewController: BaseViewController   {
     // ===== UI =====
     private var tableView = UITableView(frame: .zero, style: .grouped)
     
-    // ===== Properties =====
-    // --- Header ---
-    private let threeContentHeaderId = "threeContentHeaderId"
-    private let oneContentHeaderId = "oneContentHeaderId"
-    private let conceptViewerHeaderId = "conceptViewerHeaderId"
-    
     
     //MARK: - Life Cycles
     
@@ -51,21 +45,31 @@ final class LoungeViewController: BaseViewController   {
         tableView.delegate = self
         tableView.dataSource = self
         
+        tableView.registerClassHeaderFooterView(OneContentHeader.self)
+        tableView.registerClassHeaderFooterView(ThreeContentHeader.self)
+        tableView.registerClassHeaderFooterView(ConceptViewerHeader.self)
+        
         tableView.registerClassCell(ThreeContentCell.self)
         tableView.registerClassCell(OneContentCell.self)
         tableView.registerClassCell(QuickViewerCell.self)
-
-        tableView.register(ThreeContentHeader.self, forHeaderFooterViewReuseIdentifier: threeContentHeaderId)
-        tableView.register(OneContentHeader.self, forHeaderFooterViewReuseIdentifier: oneContentHeaderId)
-        tableView.register(ConceptViewerHeader.self, forHeaderFooterViewReuseIdentifier: conceptViewerHeaderId)
     }
     
-    
-    //MARK: - UI Action
+}
+
+
+//MARK: - UI Action
+
+
+extension LoungeViewController {
     
     private func pushToDetailViewController(_ indexPath: IndexPath) {
         let loungeDetailVC = LoungeDetailViewController(indexPath: indexPath)
         navigationController?.pushViewController(loungeDetailVC, animated: true)
+    }
+    
+    private func presentUserInfoViewController() {
+        let userInfoVC = LoungeUserInfoViewController()
+        navigationController?.present(userInfoVC, animated: true)
     }
     
 }
@@ -115,14 +119,16 @@ extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.section == 0 {
+        switch indexPath.section {
+        case 0:
             return LoungeConstants.oneContentCellHeight
-        } else if indexPath.section == 1 {
+        case 1:
             return LoungeConstants.ThreeContentCellHeight
-        } else if indexPath.section == 2 {
+        case 2:
             return LoungeConstants.QuickViewerCellHeight
+        default:
+            return 0
         }
-        return 0
     }
     
 }
@@ -131,18 +137,31 @@ extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
 //MARK: - Header
 
 extension LoungeViewController {
-    
-    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        guard let headerView = view as? ThreeContentHeader else { return }
-        headerView.setTitle("제목")
-    }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        tableView.dequeueReusableHeaderFooterView(withIdentifier: threeContentHeaderId) as? ThreeContentHeader
+        switch section {
+        case 0:
+            let headerView = tableView.dequeueReusableHeaderFooterView(OneContentHeader.self)
+            headerView.setTitle("First Title")
+            headerView.presentClouser = { [weak self] in
+                self?.presentUserInfoViewController()
+            }
+            return headerView
+        case 1:
+            let headerView = tableView.dequeueReusableHeaderFooterView(ThreeContentHeader.self)
+            return headerView
+        case 2:
+            let headerView = tableView.dequeueReusableHeaderFooterView(ThreeContentHeader.self)
+            return headerView
+        default:
+            let headerView = tableView.dequeueReusableHeaderFooterView(ThreeContentHeader.self)
+            return headerView
+        }
+        
     }
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 50
+        return 80
     }
 
 }

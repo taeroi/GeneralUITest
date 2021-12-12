@@ -9,11 +9,11 @@ import UIKit
 
 final class OneContentCell: BaseTableViewCell {
     
-    var pushClosure: ((_ indexPath: IndexPath)->())?
+    var pushClosure: ((_ indexPath: IndexPath) -> ())?
  
     private lazy var oneContentInnerCollectionView: OneContentInnerCollectionView = {
-        let itemSize = CGSize(width: kScreenW - 2 * LoungeConstants.leftMargin, height: LoungeConstants.oneContentCellHeight)
-        let frame = CGRect(x: 0, y: 0, width: kScreenW, height: LoungeConstants.oneContentCellHeight)
+        let itemSize = CGSize(width: scrrenWidth - 2 * LoungeConstants.leftMargin, height: LoungeConstants.oneContentCellHeight)
+        let frame = CGRect(x: 0, y: 0, width: scrrenWidth, height: LoungeConstants.oneContentCellHeight)
         let layout = LoungeFlowlayout(itemSize: itemSize)
         
         let collectionView = OneContentInnerCollectionView(frame: frame,
