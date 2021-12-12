@@ -17,6 +17,8 @@
 		647FCA6C2765C28D007D3C6D /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647FCA6B2765C28D007D3C6D /* UITableView+Extension.swift */; };
 		647FCA6E2765C4B3007D3C6D /* LoungeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647FCA6D2765C4B3007D3C6D /* LoungeConstants.swift */; };
 		647FCA702765C6FE007D3C6D /* Lounge_DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647FCA6F2765C6FE007D3C6D /* Lounge_DetailViewController.swift */; };
+		64B66FA72766378500224BDB /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B66FA62766378500224BDB /* BaseTableView.swift */; };
+		64B66FA92766378D00224BDB /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B66FA82766378D00224BDB /* BaseCollectionView.swift */; };
 		64B680C52762227D00971E4B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B680C42762227D00971E4B /* CustomButton.swift */; };
 		64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */; };
 		64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA2275C8F660003B170 /* LoungeViewController.swift */; };
@@ -83,6 +85,8 @@
 		647FCA6B2765C28D007D3C6D /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		647FCA6D2765C4B3007D3C6D /* LoungeConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeConstants.swift; sourceTree = "<group>"; };
 		647FCA6F2765C6FE007D3C6D /* Lounge_DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lounge_DetailViewController.swift; sourceTree = "<group>"; };
+		64B66FA62766378500224BDB /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
+		64B66FA82766378D00224BDB /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		64B680C42762227D00971E4B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapbarViewController.swift; sourceTree = "<group>"; };
 		64D7CCA2275C8F660003B170 /* LoungeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeViewController.swift; sourceTree = "<group>"; };
@@ -155,7 +159,7 @@
 			children = (
 				64E8EFD22765CD3D00F6F78C /* OneContent */,
 				64E8EFD32765CD4300F6F78C /* ThreeContent */,
-				64E8EFD42765CD4A00F6F78C /* ConceptViewer */,
+				64E8EFD42765CD4A00F6F78C /* QuickViewer */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -311,6 +315,8 @@
 			isa = PBXGroup;
 			children = (
 				64DD3FFC2750927400160991 /* BaseViewController.swift */,
+				64B66FA82766378D00224BDB /* BaseCollectionView.swift */,
+				64B66FA62766378500224BDB /* BaseTableView.swift */,
 				64DD3FFA275090AC00160991 /* BaseCollectionViewCell.swift */,
 				647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */,
 			);
@@ -337,13 +343,13 @@
 			path = ThreeContent;
 			sourceTree = "<group>";
 		};
-		64E8EFD42765CD4A00F6F78C /* ConceptViewer */ = {
+		64E8EFD42765CD4A00F6F78C /* QuickViewer */ = {
 			isa = PBXGroup;
 			children = (
 				647C22D1276340B200A9F04A /* QuickViewerCell.swift */,
 				64E8EFDC2765CE7000F6F78C /* QuickViewerInnerTableView.swift */,
 			);
-			path = ConceptViewer;
+			path = QuickViewer;
 			sourceTree = "<group>";
 		};
 		64E8EFE02765CFDF00F6F78C /* Home */ = {
@@ -516,6 +522,7 @@
 				647C22D2276340B200A9F04A /* QuickViewerCell.swift in Sources */,
 				64E8EFE32765CFFE00F6F78C /* LoungeFlowlayout.swift in Sources */,
 				64E8EFEF2765EFDE00F6F78C /* MockDatas.swift in Sources */,
+				64B66FA92766378D00224BDB /* BaseCollectionView.swift in Sources */,
 				64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */,
 				64E8EFD92765CE4300F6F78C /* ThreeContentInnerCollectionView.swift in Sources */,
 				647664B3275CF56D001A7D7C /* ThreeContentHeader.swift in Sources */,
@@ -526,6 +533,7 @@
 				647C22D62763429B00A9F04A /* OneContentHeader.swift in Sources */,
 				64E8EFDF2765CEF600F6F78C /* OneContentCollectionViewCell.swift in Sources */,
 				647FCA6E2765C4B3007D3C6D /* LoungeConstants.swift in Sources */,
+				64B66FA72766378500224BDB /* BaseTableView.swift in Sources */,
 				64E8EFDB2765CE5000F6F78C /* ThreeContentCollectionViewCell.swift in Sources */,
 				647C22D8276342B000A9F04A /* ConceptViewerHeader.swift in Sources */,
 				64E8EFDD2765CE7000F6F78C /* QuickViewerInnerTableView.swift in Sources */,

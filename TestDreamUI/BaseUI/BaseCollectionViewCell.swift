@@ -11,9 +11,10 @@ class BaseCollectionViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        contentView.backgroundColor = .white
+
         setupSubviews()
         setTitle(to: "")
-        backgroundColor = .white
     }
     
     required init?(coder: NSCoder) {
