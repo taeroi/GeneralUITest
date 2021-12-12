@@ -14,7 +14,6 @@ class BaseTableView: UITableView {
 
         showsVerticalScrollIndicator = false
         showsHorizontalScrollIndicator = false
-        backgroundColor = .white
         
         if #available(iOS 15, *) {
             sectionHeaderTopPadding = 0

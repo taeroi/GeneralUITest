@@ -8,14 +8,12 @@
 import Foundation
 import UIKit
 
+let screenHeight = UIScreen.main.bounds.size.height
+let screenWidth = UIScreen.main.bounds.size.width
+
 enum LoungeConstants {
-    static let leftMargin: CGFloat = 20
     
-    static let toDayCardRowH: CGFloat = 440
-    static let toDayCardCornerRadius: CGFloat = 15.0
-    static let todayCardSize: CGSize = CGSize(width: screenWidth - 2 * 20, height: 410)
- 
-    static let cardDetailTopImageH: CGFloat = 500
+    static let leftMargin: CGFloat = 20
     
     static let iconBorderColor: CGColor = UIColor(red: 239/255.0, green: 240/255.0, blue: 241/255.0, alpha: 1).cgColor
     static let iconBorderWidth: CGFloat = 0.8
@@ -30,14 +28,5 @@ enum LoungeConstants {
     //===== Header Height =====
     static let oneContentHeaderHeight: CGFloat = 80
     static let defaultContentHeaderHeight: CGFloat = 45
-    
-    //DetailViewController
-    static let detailPreviewImageH: CGFloat = 155
-    
-    //DownloadViewController
-    static let doubleClickViewW: CGFloat = 140
-    static let clickBarWidth: CGFloat = 6
 }
 
-let screenHeight = UIScreen.main.bounds.size.height
-let screenWidth = UIScreen.main.bounds.size.width

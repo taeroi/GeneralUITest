@@ -14,7 +14,6 @@ class BaseCollectionView: UICollectionView {
         
         showsVerticalScrollIndicator = false
         showsHorizontalScrollIndicator = false
-        backgroundColor = .white
         
         setupSubviews()
         registerCollectionView()
