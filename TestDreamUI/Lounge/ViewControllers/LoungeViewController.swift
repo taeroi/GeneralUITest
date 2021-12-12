@@ -71,6 +71,11 @@ extension LoungeViewController {
         navigationController?.present(userInfoVC, animated: true)
     }
     
+    private func pushToSeeAllViewController() {
+        let loungeSeeAllVC = LoungeSeeAllViewController()
+        navigationController?.pushViewController(loungeSeeAllVC, animated: true)
+    }
+    
 }
 
 
@@ -145,9 +150,6 @@ extension LoungeViewController {
         case 0:
             let headerView = tableView.dequeueReusableHeaderFooterView(OneContentHeader.self)
             headerView.setTitle("Title")
-            headerView.presentClouser = { [weak self] in
-                self?.presentUserInfoViewController()
-            }
             return headerView
         case 1:
             let secondHeaderView = tableView.dequeueReusableHeaderFooterView(DefaultContentHeader.self)
@@ -168,6 +170,35 @@ extension LoungeViewController {
             return LoungeConstants.oneContentHeaderHeight
         default:
             return LoungeConstants.defaultContentHeaderHeight
+        }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        switch section {
+        case 0:
+            guard let oneContentHeaderView = view as? OneContentHeader else { return }
+            oneContentHeaderView.connectGesture()
+            oneContentHeaderView.presentAction = { [weak self] in
+                self?.presentUserInfoViewController()
+            }
+        default:
+            guard let defaultContentHeaderView = view as? DefaultContentHeader else { return }
+            defaultContentHeaderView.connectGesture()
+            defaultContentHeaderView.pushAction = { [weak self] in
+                self?.pushToSeeAllViewController()
+            }
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didEndDisplayingHeaderView view: UIView, forSection section: Int) {
+        switch section {
+        case 0:
+            guard let view = view as? OneContentHeader else { return }
+            view.disconnectGesture()
+        default:
+            guard let view = view as? DefaultContentHeader else { return }
+            view.disconnectGesture()
         }
     }
     
