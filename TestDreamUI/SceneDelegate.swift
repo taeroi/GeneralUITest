@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         self.window = window
+        window.overrideUserInterfaceStyle = .light
         
         window.rootViewController = TapbarViewController()
         window.makeKeyAndVisible()
