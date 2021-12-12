@@ -24,12 +24,11 @@ enum LoungeConstants {
     static let textBlueColor = UIColor(red: 0/255.0, green: 122/255.0, blue: 255/255.0, alpha: 1.0)   //007AFF
     static let speratorLineColor = UIColor(red: 224/255.0, green: 224/255.0, blue: 224/255.0, alpha: 1)
     
-    //GameTableViewController
     static let oneContentCellHeight: CGFloat = 336
-    static let ThreeContentCellHeight: CGFloat = 282
-    static let QuickViewerCellHeight: CGFloat = 312
+    static let threeContentCellHeight: CGFloat = 282
+    static let quickViewerCellHeight: CGFloat = 312
     static let sectionHeaderH: CGFloat = 42
-    static let linkCellHeight: CGFloat = 45
+    static let quickViewerInnerCellHeight: CGFloat = 45
     
     //DetailViewController
     static let detailPreviewImageH: CGFloat = 155

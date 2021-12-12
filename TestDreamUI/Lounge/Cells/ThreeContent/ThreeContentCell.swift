@@ -9,9 +9,9 @@ import UIKit
 
 final class ThreeContentCell: BaseTableViewCell {
    
-        var pushAction: ((_ indexPath: IndexPath)->())?
+    var pushAction: ((_ indexPath: IndexPath)->())?
     var pressedGetButtonAction: ((_ model: ThreeContentModel) -> ())?
-
+    
     
     // ===== UI ======
     

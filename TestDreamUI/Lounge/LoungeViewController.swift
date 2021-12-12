@@ -126,9 +126,9 @@ extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
         case 0:
             return LoungeConstants.oneContentCellHeight
         case 1:
-            return LoungeConstants.ThreeContentCellHeight
+            return LoungeConstants.threeContentCellHeight
         case 2:
-            return LoungeConstants.QuickViewerCellHeight
+            return LoungeConstants.quickViewerCellHeight
         default:
             return 0
         }

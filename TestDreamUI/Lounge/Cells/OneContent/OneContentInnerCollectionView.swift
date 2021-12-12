@@ -14,6 +14,8 @@ final class OneContentInnerCollectionView: UICollectionView {
     
     override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
         super.init(frame: frame, collectionViewLayout: layout)
+        backgroundColor = .white
+
         register()
     }
     
@@ -25,7 +27,6 @@ final class OneContentInnerCollectionView: UICollectionView {
     //MARK: - Register
     
     private func register() {
-        backgroundColor = .white
         
         decelerationRate = UIScrollView.DecelerationRate.fast
         registerClassCell(OneContentCollectionViewCell.self)

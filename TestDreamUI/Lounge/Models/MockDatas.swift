@@ -38,28 +38,41 @@ import Foundation
 
 let ThreeContentDataResource: [ThreeContentModel] = [
     ThreeContentModel(
-        name: "Bullet Hell",
+        name: "Mock 1",
         description: "Casual",
         iconImageName: "logo_broadcast"
     ),
     ThreeContentModel(
-        name: "Hot Wheels",
+        name: "Mock 2",
         description: "Strategy",
         iconImageName: "logo_car"
     ),
     ThreeContentModel(
-        name: "SpellForce - Heroes",
+        name: "Mock 3",
         description: "Card",
         iconImageName: "logo_jump"
     ),
     ThreeContentModel(
-        name: "Farm Punks",
+        name: "Mock 4",
         description: "Role-Playing",
         iconImageName: "logo_smile"
     ),
     ThreeContentModel(
-        name: "Super Spinball",
+        name: "Mock 5",
         description: "A musical journey awaits",
         iconImageName: "logo_weibo"
     )
+]
+
+
+//MARK: - QuickViewerInner View's Mock Data
+
+let mockTableViewCellID = "mockTableViewCellID"
+let QuickViewerInnerMockDataResource: [String] = [
+    "Mock 1",
+    "Mock 2",
+    "Mock 3",
+    "Mock 4",
+    "Mock 5",
+    "Mock 6",
 ]
