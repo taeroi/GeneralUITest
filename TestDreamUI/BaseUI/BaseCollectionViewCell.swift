@@ -14,8 +14,10 @@ class BaseCollectionViewCell: UICollectionViewCell {
 
         setupSubviews()
         setTitle(to: "")
+        
+        backgroundColor = .white
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
