@@ -60,4 +60,10 @@ extension UICollectionView {
         let cell = dequeueReusableCell(withReuseIdentifier: "\(T.self)", for: indexPath) as! T
         return cell
     }
+    
+    func dequeueReusableCollectionViewCell<T: UICollectionViewCell>(_ cell: T.Type,
+                                             for indexPath: IndexPath) -> T {
+        let cell = dequeueReusableCell(withReuseIdentifier: "\(T.self)", for: indexPath) as! T
+        return cell
+    }
 }
