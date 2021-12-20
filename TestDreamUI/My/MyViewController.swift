@@ -50,9 +50,9 @@ final class MyViewController: BaseViewController {
         )
         tableView.separatorInset = UIEdgeInsets(
             top: 0,
-            left: DefaultConstants.shared.lounge.leftMargin,
+            left: DefaultConstants.shared.my.leftMargin,
             bottom: 0,
-            right: DefaultConstants.shared.lounge.leftMargin
+            right: DefaultConstants.shared.my.leftMargin
         )
         tableView.registerClassCell(MyTopInfoCell.self)
         tableView.registerClassCell(MyStoryCell.self)

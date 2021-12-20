@@ -1,5 +1,5 @@
 //
-//  My_StroyInnerCollectionViewCell.swift
+//  My_StoryInnerCollectionViewFirstCell.swift
 //  TestDreamUI
 //
 //  Created by 박태환 on 2021/12/20.
@@ -7,23 +7,14 @@
 
 import UIKit
 
-final class MyStroyInnerCollectionViewCell: BaseCollectionViewCell {
-    
-    // ===== Model =====
-    var model: MyStoryModel! {
-        didSet {
-            coverImageView.image = UIImage(named: model.coverImageName)
-            titleLabel.text = model.title
-        }
-    }
+final class MyStoryInnerCollectionViewFirstCell: BaseCollectionViewCell {
     
     // ===== UI =====
     lazy var coverImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.image = UIImage(named: "sample_plus")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.layer.cornerRadius = DefaultConstants.shared.my.storyImageCornerRadius
-        imageView.layer.borderColor = DefaultConstants.shared.my.storyImageBorderColor
-        imageView.layer.borderWidth = DefaultConstants.shared.my.storyImageBorderWidth
         imageView.clipsToBounds = true
         return imageView
     }()

@@ -11,23 +11,23 @@ import Foundation
 let MyStoryDataResource: [MyStoryModel] = [
     MyStoryModel(
         coverImageName: "my_sample_image2",
-        title: "sample 1"
-    ),
-    MyStoryModel(
-        coverImageName: "my_sample_image3",
         title: "sample 2"
     ),
     MyStoryModel(
-        coverImageName: "my_sample_image4",
+        coverImageName: "my_sample_image3",
         title: "sample 3"
+    ),
+    MyStoryModel(
+        coverImageName: "my_sample_image4",
+        title: "sample 4"
     ),
     MyStoryModel(
         coverImageName: "my_sample_image",
-        title: "sample 3"
+        title: "sample 1"
     ),
     MyStoryModel(
         coverImageName: "my_sample_image2",
-        title: "sample 3"
+        title: "sample 2"
     ),
     MyStoryModel(
         coverImageName: "my_sample_image3",

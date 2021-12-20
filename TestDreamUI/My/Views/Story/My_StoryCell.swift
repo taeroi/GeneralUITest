@@ -48,14 +48,19 @@ final class MyStoryCell: BaseTableViewCell {
 extension MyStoryCell: UICollectionViewDataSource,UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return MyStoryDataResource.count
+        return MyStoryDataResource.count + 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusable(MyStroyInnerCollectionViewCell.self, for: indexPath)
-        cell.model = MyStoryDataResource[indexPath.row]
-        
-        return cell
+        switch indexPath.row {
+        case 0:
+            return collectionView.dequeueReusable(MyStoryInnerCollectionViewFirstCell.self, for: indexPath)
+        default:
+            let cell = collectionView.dequeueReusable(MyStroyInnerCollectionViewCell.self, for: indexPath)
+            cell.model = MyStoryDataResource[indexPath.row - 1]
+            
+            return cell
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
