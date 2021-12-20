@@ -23,6 +23,8 @@
 		647FCA702765C6FE007D3C6D /* Lounge_DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647FCA6F2765C6FE007D3C6D /* Lounge_DetailViewController.swift */; };
 		64B12BF427702A42009235D3 /* My_StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B12BF327702A42009235D3 /* My_StoryModel.swift */; };
 		64B12BF627702AA7009235D3 /* My_MockDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B12BF527702AA7009235D3 /* My_MockDatas.swift */; };
+		64B12BFD27702BE0009235D3 /* My_StoryInnerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B12BFC27702BE0009235D3 /* My_StoryInnerCollectionView.swift */; };
+		64B12BFF27702BEE009235D3 /* My_StroyInnerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B12BFE27702BEE009235D3 /* My_StroyInnerCollectionViewCell.swift */; };
 		64B66FA72766378500224BDB /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B66FA62766378500224BDB /* BaseTableView.swift */; };
 		64B66FA92766378D00224BDB /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B66FA82766378D00224BDB /* BaseCollectionView.swift */; };
 		64B66FAB2766432B00224BDB /* LoungeSeeAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B66FAA2766432B00224BDB /* LoungeSeeAllViewController.swift */; };
@@ -98,6 +100,8 @@
 		647FCA6F2765C6FE007D3C6D /* Lounge_DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lounge_DetailViewController.swift; sourceTree = "<group>"; };
 		64B12BF327702A42009235D3 /* My_StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_StoryModel.swift; sourceTree = "<group>"; };
 		64B12BF527702AA7009235D3 /* My_MockDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_MockDatas.swift; sourceTree = "<group>"; };
+		64B12BFC27702BE0009235D3 /* My_StoryInnerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_StoryInnerCollectionView.swift; sourceTree = "<group>"; };
+		64B12BFE27702BEE009235D3 /* My_StroyInnerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_StroyInnerCollectionViewCell.swift; sourceTree = "<group>"; };
 		64B66FA62766378500224BDB /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		64B66FA82766378D00224BDB /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		64B66FAA2766432B00224BDB /* LoungeSeeAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeSeeAllViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				6406EB86276C5A76005CE6C2 /* My_StoryCell.swift */,
+				64B12BFC27702BE0009235D3 /* My_StoryInnerCollectionView.swift */,
+				64B12BFE27702BEE009235D3 /* My_StroyInnerCollectionViewCell.swift */,
 			);
 			path = Story;
 			sourceTree = "<group>";
@@ -596,6 +602,7 @@
 				647C22D2276340B200A9F04A /* QuickViewerCell.swift in Sources */,
 				64E8EFE32765CFFE00F6F78C /* LoungeFlowlayout.swift in Sources */,
 				64E8EFEF2765EFDE00F6F78C /* MockDatas.swift in Sources */,
+				64B12BFD27702BE0009235D3 /* My_StoryInnerCollectionView.swift in Sources */,
 				6406EB8B276C6F40005CE6C2 /* My_ContentHeaderInnerCell.swift in Sources */,
 				64B66FA92766378D00224BDB /* BaseCollectionView.swift in Sources */,
 				64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */,
@@ -623,6 +630,7 @@
 				64E8EFE62765D0E700F6F78C /* OneContentModel.swift in Sources */,
 				64DD3FF72750812900160991 /* KeywordMenuCell.swift in Sources */,
 				64E8EFE82765D0F300F6F78C /* ThreeContentModel.swift in Sources */,
+				64B12BFF27702BEE009235D3 /* My_StroyInnerCollectionViewCell.swift in Sources */,
 				647FCA6C2765C28D007D3C6D /* UITableView+Extension.swift in Sources */,
 				64E8EFEA2765D0FC00F6F78C /* ConceptViewerModel.swift in Sources */,
 				64DD3FF92750815400160991 /* SecondRowGridContentPageCell.swift in Sources */,
