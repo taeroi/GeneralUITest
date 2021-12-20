@@ -37,8 +37,8 @@ final class MyViewController: BaseViewController {
         tableView.frame = CGRect(
             x: 0,
             y: -statusBarHeight,
-            width: screenWidth,
-            height: screenHeight + statusBarHeight
+            width: DefaultConstants.shared.screenWidth,
+            height: DefaultConstants.shared.screenHeight + statusBarHeight
         )
         tableView.delegate = self
         tableView.dataSource = self
@@ -50,9 +50,9 @@ final class MyViewController: BaseViewController {
         )
         tableView.separatorInset = UIEdgeInsets(
             top: 0,
-            left: LoungeConstants.leftMargin,
+            left: DefaultConstants.shared.lounge.leftMargin,
             bottom: 0,
-            right: LoungeConstants.leftMargin
+            right: DefaultConstants.shared.lounge.leftMargin
         )
         tableView.registerClassCell(MyTopInfoCell.self)
         tableView.registerClassCell(MyStoryCell.self)
@@ -67,7 +67,7 @@ final class MyViewController: BaseViewController {
         imageView.frame = CGRect(
             x: 0,
             y: -(topImageViewHeight),
-            width: screenWidth,
+            width: DefaultConstants.shared.screenWidth,
             height: topImageViewHeight
         )
         imageView.layer.masksToBounds = true

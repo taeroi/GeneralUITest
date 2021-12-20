@@ -19,7 +19,7 @@ final class MyStoryCell: BaseTableViewCell {
         let frame = CGRect(
             x: 0,
             y: 0,
-            width: screenWidth,
+            width: DefaultConstants.shared.screenWidth,
             height: 120
         )
         let layout = MyFlowLayout(itemSize: itemSize)

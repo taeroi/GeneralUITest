@@ -10,7 +10,7 @@ import UIKit
 final class QuickViewerInnerTableView: BaseTableView {
     
     override func setupSubviews() {
-        rowHeight = LoungeConstants.quickViewerInnerCellHeight
+        rowHeight = DefaultConstants.shared.lounge .quickViewerInnerCellHeight
         separatorInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
     }
     

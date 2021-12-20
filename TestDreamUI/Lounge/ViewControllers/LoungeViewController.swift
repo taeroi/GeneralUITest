@@ -128,11 +128,11 @@ extension LoungeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:
-            return LoungeConstants.oneContentCellHeight
+            return DefaultConstants.shared.lounge.oneContentCellHeight
         case 1:
-            return LoungeConstants.threeContentCellHeight
+            return DefaultConstants.shared.lounge.threeContentCellHeight
         case 2:
-            return LoungeConstants.quickViewerCellHeight
+            return DefaultConstants.shared.lounge.quickViewerCellHeight
         default:
             return 0
         }
@@ -167,9 +167,9 @@ extension LoungeViewController {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
         case 0:
-            return LoungeConstants.oneContentHeaderHeight
+            return DefaultConstants.shared.lounge.oneContentHeaderHeight
         default:
-            return LoungeConstants.defaultContentHeaderHeight
+            return DefaultConstants.shared.lounge.defaultContentHeaderHeight
         }
     }
     

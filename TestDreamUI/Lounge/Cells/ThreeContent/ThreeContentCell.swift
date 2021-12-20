@@ -17,13 +17,13 @@ final class ThreeContentCell: BaseTableViewCell {
     
     private lazy var threeContentInnerCollectionView: ThreeContentInnerCollectionView = {
         let itemSize = CGSize(
-            width: screenWidth - 2 * LoungeConstants.leftMargin,
+            width: DefaultConstants.shared.screenWidth - 2 * DefaultConstants.shared.lounge.leftMargin,
             height: 80
         )
         let frame = CGRect(
             x: 0,
             y: 0,
-            width: screenWidth,
+            width: DefaultConstants.shared.screenWidth,
             height: 80 * 3
         )
         let layout = LoungeFlowlayout(itemSize: itemSize)

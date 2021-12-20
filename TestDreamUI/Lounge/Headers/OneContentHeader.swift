@@ -25,9 +25,9 @@ final class OneContentHeader: UITableViewHeaderFooterView {
 //        button.setImage(#imageLiteral(resourceName: "square.and.arrow.up"), for: .normal)
 //        button.setImage(#imageLiteral(resourceName: "square.and.arrow.up"), for: .highlighted)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.layer.borderColor = LoungeConstants.iconBorderColor
-        button.layer.borderWidth =  LoungeConstants.iconBorderWidth
-        button.layer.cornerRadius = LoungeConstants.iconCornerRadius
+        button.layer.borderColor = DefaultConstants.shared.lounge.iconBorderColor
+        button.layer.borderWidth =  DefaultConstants.shared.lounge.iconBorderWidth
+        button.layer.cornerRadius = DefaultConstants.shared.lounge.iconCornerRadius
         return button
     }()
     

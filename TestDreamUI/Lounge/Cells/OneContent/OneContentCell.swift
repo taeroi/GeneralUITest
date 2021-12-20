@@ -13,14 +13,14 @@ final class OneContentCell: BaseTableViewCell {
  
     private lazy var oneContentInnerCollectionView: OneContentInnerCollectionView = {
         let itemSize = CGSize(
-            width: screenWidth - 3 * LoungeConstants.leftMargin,
-            height: LoungeConstants.oneContentCellHeight
+            width: DefaultConstants.shared.screenWidth - 3 * DefaultConstants.shared.lounge.leftMargin,
+            height: DefaultConstants.shared.lounge.oneContentCellHeight
         )
         let frame = CGRect(
             x: 0,
             y: 0,
-            width: screenWidth,
-            height: LoungeConstants.oneContentCellHeight
+            width: DefaultConstants.shared.screenWidth,
+            height: DefaultConstants.shared.lounge.oneContentCellHeight
         )
         let layout = LoungeFlowlayout(itemSize: itemSize)
         

@@ -18,7 +18,7 @@ final class MyStroyInnerCollectionViewCell: BaseCollectionViewCell {
     }
     
     // ===== UI =====
-    var coverImageView: UIImageView = {
+    lazy var coverImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
@@ -47,6 +47,8 @@ final class MyStroyInnerCollectionViewCell: BaseCollectionViewCell {
         titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         
+        coverImageView.layer.cornerRadius = 50
+        coverImageView.clipsToBounds = true
     }
     
 }

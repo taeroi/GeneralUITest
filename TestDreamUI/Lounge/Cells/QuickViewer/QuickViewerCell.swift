@@ -17,8 +17,8 @@ final class QuickViewerCell: BaseTableViewCell {
         let frame = CGRect(
             x: 0,
             y: 0,
-            width: screenWidth,
-            height: LoungeConstants.quickViewerCellHeight * CGFloat(QuickViewerInnerMockDataResource.count)
+            width: DefaultConstants.shared.screenWidth,
+            height: DefaultConstants.shared.lounge.quickViewerCellHeight * CGFloat(QuickViewerInnerMockDataResource.count)
         )
         let tableView = QuickViewerInnerTableView(frame: frame, style: .grouped)
         tableView.dataSource = self
