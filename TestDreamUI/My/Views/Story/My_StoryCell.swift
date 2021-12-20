@@ -13,16 +13,16 @@ final class MyStoryCell: BaseTableViewCell {
     
     private lazy var innerCollectionView: MyStoryInnerCollectionView = {
         let itemSize = CGSize(
-            width: screenWidth - 3 * LoungeConstants.leftMargin,
-            height: LoungeConstants.oneContentCellHeight
+            width: 100,
+            height: 120
         )
         let frame = CGRect(
             x: 0,
             y: 0,
             width: screenWidth,
-            height: LoungeConstants.oneContentCellHeight
+            height: 120
         )
-        let layout = LoungeFlowlayout(itemSize: itemSize)
+        let layout = MyFlowLayout(itemSize: itemSize)
         
         let collectionView = MyStoryInnerCollectionView(
             frame: frame,
@@ -37,7 +37,7 @@ final class MyStoryCell: BaseTableViewCell {
     //MARK: - Setup Subviews
     
     override func setupSubviews() {
-        addSubview(innerCollectionView)
+        contentView.addSubview(innerCollectionView)
     }
     
 }

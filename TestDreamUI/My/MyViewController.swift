@@ -107,8 +107,8 @@ extension MyViewController: UITableViewDataSource {
             return tableView.dequeueReusable(MyTopInfoCell.self, for: indexPath)
         case 1:
             let cell = tableView.dequeueReusable(MyStoryCell.self, for: indexPath)
-            cell.pushAction = { [weak self] model in
-                print("story model :: ", model)
+            cell.pushAction = { [weak self] cellIndexPath in
+                print("story model :: ", cellIndexPath)
             }
             return cell
         case 2:
@@ -127,7 +127,7 @@ extension MyViewController: UITableViewDelegate {
         case 0:
             return 300
         case 1:
-            return 400
+            return 100
         case 2:
             return 500
         default:

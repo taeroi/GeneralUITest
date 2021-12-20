@@ -9,7 +9,6 @@ import UIKit
 
 final class MyStoryInnerCollectionView: BaseCollectionView {
     
-    
     override func registerCollectionView() {
         decelerationRate = UIScrollView.DecelerationRate.fast
         registerClassCell(MyStroyInnerCollectionViewCell.self)

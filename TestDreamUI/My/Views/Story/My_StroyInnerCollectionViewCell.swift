@@ -39,6 +39,7 @@ final class MyStroyInnerCollectionViewCell: BaseCollectionViewCell {
         coverImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
         coverImageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         coverImageView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        coverImageView.heightAnchor.constraint(equalTo: coverImageView.widthAnchor).isActive = true
         
         addSubview(titleLabel)
         titleLabel.topAnchor.constraint(equalTo: coverImageView.bottomAnchor, constant: 4).isActive = true

@@ -20,5 +20,17 @@ let MyStoryDataResource: [MyStoryModel] = [
     MyStoryModel(
         coverImageName: "my_sample_image4",
         title: "sample 3"
+    ),
+    MyStoryModel(
+        coverImageName: "my_sample_image",
+        title: "sample 3"
+    ),
+    MyStoryModel(
+        coverImageName: "my_sample_image2",
+        title: "sample 3"
+    ),
+    MyStoryModel(
+        coverImageName: "my_sample_image3",
+        title: "sample 3"
     )
 ]
