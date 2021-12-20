@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6406EB83276C57C0005CE6C2 /* My_TopInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406EB82276C57C0005CE6C2 /* My_TopInfoCell.swift */; };
-		6406EB85276C57FD005CE6C2 /* My_ContentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406EB84276C57FD005CE6C2 /* My_ContentListCell.swift */; };
+		6406EB85276C57FD005CE6C2 /* My_ContentListPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406EB84276C57FD005CE6C2 /* My_ContentListPageCell.swift */; };
 		6406EB87276C5A76005CE6C2 /* My_StoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406EB86276C5A76005CE6C2 /* My_StoryCell.swift */; };
-		6406EB89276C6B69005CE6C2 /* My_ContentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406EB88276C6B69005CE6C2 /* My_ContentHeader.swift */; };
-		6406EB8B276C6F40005CE6C2 /* My_ContentHeaderInnerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406EB8A276C6F40005CE6C2 /* My_ContentHeaderInnerCell.swift */; };
+		6406EB89276C6B69005CE6C2 /* My_ContentTapHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406EB88276C6B69005CE6C2 /* My_ContentTapHeader.swift */; };
+		6406EB8B276C6F40005CE6C2 /* My_ContentTabHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406EB8A276C6F40005CE6C2 /* My_ContentTabHeaderCell.swift */; };
 		647664AF275CF233001A7D7C /* ThreeContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664AE275CF233001A7D7C /* ThreeContentCell.swift */; };
 		647664B1275CF24E001A7D7C /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */; };
 		647664B3275CF56D001A7D7C /* DefaultContentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647664B2275CF56D001A7D7C /* DefaultContentHeader.swift */; };
@@ -33,6 +33,9 @@
 		64D56CE52770435600917A26 /* MyFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D56CE42770435600917A26 /* MyFlowLayout.swift */; };
 		64D56CE927704C6800917A26 /* My_StoryInnerCollectionViewFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D56CE827704C6800917A26 /* My_StoryInnerCollectionViewFirstCell.swift */; };
 		64D56CEB27705F9300917A26 /* My_ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D56CEA27705F9300917A26 /* My_ContentCell.swift */; };
+		64D56CED2770602100917A26 /* My_ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D56CEC2770602100917A26 /* My_ContentModel.swift */; };
+		64D56CEF2770658600917A26 /* My_ContentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D56CEE2770658600917A26 /* My_ContentListCell.swift */; };
+		64D56CF327706E4A00917A26 /* My_ContentListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D56CF227706E4A00917A26 /* My_ContentListCollectionView.swift */; };
 		64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */; };
 		64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA2275C8F660003B170 /* LoungeViewController.swift */; };
 		64D7CCA5275C8F6D0003B170 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA4275C8F6D0003B170 /* MyViewController.swift */; };
@@ -89,10 +92,10 @@
 
 /* Begin PBXFileReference section */
 		6406EB82276C57C0005CE6C2 /* My_TopInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_TopInfoCell.swift; sourceTree = "<group>"; };
-		6406EB84276C57FD005CE6C2 /* My_ContentListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ContentListCell.swift; sourceTree = "<group>"; };
+		6406EB84276C57FD005CE6C2 /* My_ContentListPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ContentListPageCell.swift; sourceTree = "<group>"; };
 		6406EB86276C5A76005CE6C2 /* My_StoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_StoryCell.swift; sourceTree = "<group>"; };
-		6406EB88276C6B69005CE6C2 /* My_ContentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ContentHeader.swift; sourceTree = "<group>"; };
-		6406EB8A276C6F40005CE6C2 /* My_ContentHeaderInnerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ContentHeaderInnerCell.swift; sourceTree = "<group>"; };
+		6406EB88276C6B69005CE6C2 /* My_ContentTapHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ContentTapHeader.swift; sourceTree = "<group>"; };
+		6406EB8A276C6F40005CE6C2 /* My_ContentTabHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ContentTabHeaderCell.swift; sourceTree = "<group>"; };
 		647664AE275CF233001A7D7C /* ThreeContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeContentCell.swift; sourceTree = "<group>"; };
 		647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		647664B2275CF56D001A7D7C /* DefaultContentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultContentHeader.swift; sourceTree = "<group>"; };
@@ -114,6 +117,9 @@
 		64D56CE42770435600917A26 /* MyFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFlowLayout.swift; sourceTree = "<group>"; };
 		64D56CE827704C6800917A26 /* My_StoryInnerCollectionViewFirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_StoryInnerCollectionViewFirstCell.swift; sourceTree = "<group>"; };
 		64D56CEA27705F9300917A26 /* My_ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ContentCell.swift; sourceTree = "<group>"; };
+		64D56CEC2770602100917A26 /* My_ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ContentModel.swift; sourceTree = "<group>"; };
+		64D56CEE2770658600917A26 /* My_ContentListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ContentListCell.swift; sourceTree = "<group>"; };
+		64D56CF227706E4A00917A26 /* My_ContentListCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_ContentListCollectionView.swift; sourceTree = "<group>"; };
 		64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapbarViewController.swift; sourceTree = "<group>"; };
 		64D7CCA2275C8F660003B170 /* LoungeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeViewController.swift; sourceTree = "<group>"; };
 		64D7CCA4275C8F6D0003B170 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				64B12BF327702A42009235D3 /* My_StoryModel.swift */,
+				64D56CEC2770602100917A26 /* My_ContentModel.swift */,
 				64B12BF527702AA7009235D3 /* My_MockDatas.swift */,
 			);
 			path = Models;
@@ -249,9 +256,11 @@
 		64B12BFB27702B6A009235D3 /* My_Content */ = {
 			isa = PBXGroup;
 			children = (
-				6406EB88276C6B69005CE6C2 /* My_ContentHeader.swift */,
-				6406EB8A276C6F40005CE6C2 /* My_ContentHeaderInnerCell.swift */,
-				6406EB84276C57FD005CE6C2 /* My_ContentListCell.swift */,
+				6406EB88276C6B69005CE6C2 /* My_ContentTapHeader.swift */,
+				6406EB8A276C6F40005CE6C2 /* My_ContentTabHeaderCell.swift */,
+				6406EB84276C57FD005CE6C2 /* My_ContentListPageCell.swift */,
+				64D56CF227706E4A00917A26 /* My_ContentListCollectionView.swift */,
+				64D56CEE2770658600917A26 /* My_ContentListCell.swift */,
 				64D56CEA27705F9300917A26 /* My_ContentCell.swift */,
 			);
 			path = My_Content;
@@ -613,13 +622,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6406EB85276C57FD005CE6C2 /* My_ContentListCell.swift in Sources */,
+				64D56CEF2770658600917A26 /* My_ContentListCell.swift in Sources */,
+				6406EB85276C57FD005CE6C2 /* My_ContentListPageCell.swift in Sources */,
 				64DD3FC627507C8A00160991 /* HomeViewController.swift in Sources */,
 				64D7CCAF275C94B90003B170 /* SecondRowColumnCell.swift in Sources */,
 				64E8EFD62765CD8E00F6F78C /* OneContentInnerCollectionView.swift in Sources */,
 				64D56CE22770304D00917A26 /* UICollectionView + Extension.swift in Sources */,
 				64B66FAB2766432B00224BDB /* LoungeSeeAllViewController.swift in Sources */,
 				64DD3FFB275090AC00160991 /* BaseCollectionViewCell.swift in Sources */,
+				64D56CED2770602100917A26 /* My_ContentModel.swift in Sources */,
 				64B680C52762227D00971E4B /* CustomButton.swift in Sources */,
 				64B12BF627702AA7009235D3 /* My_MockDatas.swift in Sources */,
 				6406EB83276C57C0005CE6C2 /* My_TopInfoCell.swift in Sources */,
@@ -633,7 +644,8 @@
 				64E8EFE32765CFFE00F6F78C /* LoungeFlowlayout.swift in Sources */,
 				64E8EFEF2765EFDE00F6F78C /* MockDatas.swift in Sources */,
 				64B12BFD27702BE0009235D3 /* My_StoryInnerCollectionView.swift in Sources */,
-				6406EB8B276C6F40005CE6C2 /* My_ContentHeaderInnerCell.swift in Sources */,
+				64D56CF327706E4A00917A26 /* My_ContentListCollectionView.swift in Sources */,
+				6406EB8B276C6F40005CE6C2 /* My_ContentTabHeaderCell.swift in Sources */,
 				64B66FA92766378D00224BDB /* BaseCollectionView.swift in Sources */,
 				64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */,
 				64E8EFD92765CE4300F6F78C /* ThreeContentInnerCollectionView.swift in Sources */,
@@ -645,7 +657,7 @@
 				647C22D62763429B00A9F04A /* OneContentHeader.swift in Sources */,
 				64E8EFDF2765CEF600F6F78C /* OneContentCollectionViewCell.swift in Sources */,
 				647FCA6E2765C4B3007D3C6D /* DefaultConstants.swift in Sources */,
-				6406EB89276C6B69005CE6C2 /* My_ContentHeader.swift in Sources */,
+				6406EB89276C6B69005CE6C2 /* My_ContentTapHeader.swift in Sources */,
 				64B66FA72766378500224BDB /* BaseTableView.swift in Sources */,
 				64E8EFDB2765CE5000F6F78C /* ThreeContentCollectionViewCell.swift in Sources */,
 				64E8EFDD2765CE7000F6F78C /* QuickViewerInnerTableView.swift in Sources */,

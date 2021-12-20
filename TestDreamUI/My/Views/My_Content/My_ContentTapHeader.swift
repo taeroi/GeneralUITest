@@ -1,5 +1,5 @@
 //
-//  My_ContentHeader.swift
+//  My_ContentTapHeader.swift
 //  TestDreamUI
 //
 //  Created by 박태환 on 2021/12/17.
@@ -11,7 +11,7 @@ protocol ContentMenuTappable: AnyObject {
     func getTapOffset(from index: Int)
 }
 
-final class MyContentHeader: UITableViewHeaderFooterView {
+final class MyContentTapHeader: UITableViewHeaderFooterView {
     
     //===== Properties =====
     weak var delegate: ContentMenuTappable?
@@ -74,7 +74,7 @@ final class MyContentHeader: UITableViewHeaderFooterView {
     private func registerCollectionView() {
         menuCollectionView.delegate = self
         menuCollectionView.dataSource = self
-        menuCollectionView.registerClassCell(MyContentHeaderInnerCell.self)
+        menuCollectionView.registerClassCell(MyContentTapHeaderCell.self)
 
         let indexPath = IndexPath(item: 0, section: 0)
         menuCollectionView.selectItem(
@@ -91,14 +91,14 @@ final class MyContentHeader: UITableViewHeaderFooterView {
 
 //MARK: - CollectionView Delegate & DataSource
 
-extension MyContentHeader: UICollectionViewDelegate, UICollectionViewDataSource {
+extension MyContentTapHeader: UICollectionViewDelegate, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return tapMenuList.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCollectionViewCell(MyContentHeaderInnerCell.self, for: indexPath)
+        let cell = collectionView.dequeueReusableCollectionViewCell(MyContentTapHeaderCell.self, for: indexPath)
         cell.setTitle(to: tapMenuList[indexPath.item])
 
         return cell
@@ -109,7 +109,7 @@ extension MyContentHeader: UICollectionViewDelegate, UICollectionViewDataSource 
     }
 
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        guard let cell = collectionView.cellForItem(at: indexPath) as? MyContentHeaderInnerCell else { return }
+        guard let cell = collectionView.cellForItem(at: indexPath) as? MyContentTapHeaderCell else { return }
         cell.titleLabel.textColor = .lightGray
     }
 
@@ -118,7 +118,7 @@ extension MyContentHeader: UICollectionViewDelegate, UICollectionViewDataSource 
 
 //MARK: - Delegate FlowLayout
 
-extension MyContentHeader: UICollectionViewDelegateFlowLayout {
+extension MyContentTapHeader: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(

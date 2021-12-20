@@ -58,8 +58,8 @@ final class MyViewController: BaseViewController {
         
         tableView.registerClassCell(MyTopInfoCell.self)
         tableView.registerClassCell(MyStoryCell.self)
-        tableView.registerClassCell(MyContentListCell.self)
-        tableView.registerClassHeaderFooterView(MyContentHeader.self)
+        tableView.registerClassCell(MyContentListPageCell.self)
+        tableView.registerClassHeaderFooterView(MyContentTapHeader.self)
         
         return tableView
     }()
@@ -126,7 +126,7 @@ extension MyViewController: UITableViewDataSource {
             }
             return cell
         case (1, _):
-            return tableView.dequeueReusable(MyContentListCell.self, for: indexPath)
+            return tableView.dequeueReusable(MyContentListPageCell.self, for: indexPath)
         default:
             return UITableViewCell()
         }
@@ -179,7 +179,7 @@ extension MyViewController {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         switch section {
         case 1:
-            return tableView.dequeueReusableHeaderFooterView(MyContentHeader.self)
+            return tableView.dequeueReusableHeaderFooterView(MyContentTapHeader.self)
         default:
             return UIView()
         }

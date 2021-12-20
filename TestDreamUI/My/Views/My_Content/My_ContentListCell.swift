@@ -2,52 +2,35 @@
 //  My_ContentListCell.swift
 //  TestDreamUI
 //
-//  Created by 박태환 on 2021/12/17.
+//  Created by 박태환 on 2021/12/20.
 //
 
 import UIKit
 
-final class MyContentListCell: BaseTableViewCell {
+final class MyContentListCell: BaseCollectionViewCell {
     
+    // ===== Models =====
+    var contentModel = MyContentDataResource
+    var bookmarkModel = [MyBookmarkDataResource]
+    
+    // ===== Properties =====
+    var cellType: CellType?
+    
+    enum CellType {
+        case content, bookmark
+    }
     
     // ===== UI =====
-    private var pageCollectionView: UICollectionView = {
-        let collectionViewLayout = UICollectionViewFlowLayout()
-        collectionViewLayout.scrollDirection = .horizontal
-        let collectionView = UICollectionView(frame: CGRect(x: 0, y: 0, width: 100, height: 100),
-                                              collectionViewLayout: collectionViewLayout)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        return collectionView
+    var titleLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
     }()
     
-    
-    //MARK: - Setup, Register
-    
     override func setupSubviews() {
-        registerCollectionView()
-    }
-    
-    private func registerCollectionView() {
-        
-    }
-    
-    
-}
-
-
-extension MyContentListCell: ContentMenuTappable {
-    
-    func getTapOffset(from index: Int) {
-        let indexPath = IndexPath(row: index, section: 0)
-        
-        let header = MyContentHeader()
-        header.menuCollectionView.selectItem(
-            at: indexPath,
-            animated: true,
-            scrollPosition: []
-        )
-        
-        
+        contentView.addSubview(titleLabel)
+        titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor).isActive = true
     }
     
 }

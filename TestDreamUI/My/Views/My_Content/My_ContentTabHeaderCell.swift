@@ -1,5 +1,5 @@
 //
-//  My_ContentHeaderInnerCell.swift
+//  My_ContentTapHeaderCell.swift
 //  TestDreamUI
 //
 //  Created by 박태환 on 2021/12/17.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MyContentHeaderInnerCell: BaseCollectionViewCell {
+final class MyContentTapHeaderCell: BaseCollectionViewCell {
     
     var titleLabel: UILabel = {
         let label = UILabel()
