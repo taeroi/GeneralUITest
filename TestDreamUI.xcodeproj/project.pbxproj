@@ -195,11 +195,49 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		64B12BF727702AD3009235D3 /* New Group */ = {
+		64B12BF727702AD3009235D3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				64B12BF927702B5B009235D3 /* TopInfo */,
+				64B12BFA27702B63009235D3 /* Story */,
+				64B12BFB27702B6A009235D3 /* My_Content */,
 			);
-			path = "New Group";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		64B12BF827702B4A009235D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64B12BF327702A42009235D3 /* My_StoryModel.swift */,
+				64B12BF527702AA7009235D3 /* My_MockDatas.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64B12BF927702B5B009235D3 /* TopInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6406EB82276C57C0005CE6C2 /* My_TopInfoCell.swift */,
+			);
+			path = TopInfo;
+			sourceTree = "<group>";
+		};
+		64B12BFA27702B63009235D3 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				6406EB86276C5A76005CE6C2 /* My_StoryCell.swift */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		64B12BFB27702B6A009235D3 /* My_Content */ = {
+			isa = PBXGroup;
+			children = (
+				6406EB88276C6B69005CE6C2 /* My_ContentHeader.swift */,
+				6406EB8A276C6F40005CE6C2 /* My_ContentHeaderInnerCell.swift */,
+				6406EB84276C57FD005CE6C2 /* My_ContentCell.swift */,
+			);
+			path = My_Content;
 			sourceTree = "<group>";
 		};
 		64B66FAC2766437700224BDB /* ViewControllers */ = {
@@ -237,14 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				64D7CCA4275C8F6D0003B170 /* MyViewController.swift */,
-				64B12BF727702AD3009235D3 /* New Group */,
-				6406EB82276C57C0005CE6C2 /* My_TopInfoCell.swift */,
-				6406EB86276C5A76005CE6C2 /* My_StoryCell.swift */,
-				6406EB88276C6B69005CE6C2 /* My_ContentHeader.swift */,
-				6406EB8A276C6F40005CE6C2 /* My_ContentHeaderInnerCell.swift */,
-				6406EB84276C57FD005CE6C2 /* My_ContentCell.swift */,
-				64B12BF327702A42009235D3 /* My_StoryModel.swift */,
-				64B12BF527702AA7009235D3 /* My_MockDatas.swift */,
+				64B12BF727702AD3009235D3 /* Views */,
+				64B12BF827702B4A009235D3 /* Models */,
 			);
 			path = My;
 			sourceTree = "<group>";
