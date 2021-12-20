@@ -29,6 +29,7 @@
 		64B66FA92766378D00224BDB /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B66FA82766378D00224BDB /* BaseCollectionView.swift */; };
 		64B66FAB2766432B00224BDB /* LoungeSeeAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B66FAA2766432B00224BDB /* LoungeSeeAllViewController.swift */; };
 		64B680C52762227D00971E4B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B680C42762227D00971E4B /* CustomButton.swift */; };
+		64D56CE22770304D00917A26 /* UICollectionView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D56CE12770304D00917A26 /* UICollectionView + Extension.swift */; };
 		64D7CCA1275C8DBD0003B170 /* TapbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */; };
 		64D7CCA3275C8F660003B170 /* LoungeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA2275C8F660003B170 /* LoungeViewController.swift */; };
 		64D7CCA5275C8F6D0003B170 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D7CCA4275C8F6D0003B170 /* MyViewController.swift */; };
@@ -106,6 +107,7 @@
 		64B66FA82766378D00224BDB /* BaseCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
 		64B66FAA2766432B00224BDB /* LoungeSeeAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeSeeAllViewController.swift; sourceTree = "<group>"; };
 		64B680C42762227D00971E4B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		64D56CE12770304D00917A26 /* UICollectionView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Extension.swift"; sourceTree = "<group>"; };
 		64D7CCA0275C8DBD0003B170 /* TapbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapbarViewController.swift; sourceTree = "<group>"; };
 		64D7CCA2275C8F660003B170 /* LoungeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoungeViewController.swift; sourceTree = "<group>"; };
 		64D7CCA4275C8F6D0003B170 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				647FCA6B2765C28D007D3C6D /* UITableView+Extension.swift */,
+				64D56CE12770304D00917A26 /* UICollectionView + Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -589,6 +592,7 @@
 				64DD3FC627507C8A00160991 /* HomeViewController.swift in Sources */,
 				64D7CCAF275C94B90003B170 /* SecondRowColumnCell.swift in Sources */,
 				64E8EFD62765CD8E00F6F78C /* OneContentInnerCollectionView.swift in Sources */,
+				64D56CE22770304D00917A26 /* UICollectionView + Extension.swift in Sources */,
 				64B66FAB2766432B00224BDB /* LoungeSeeAllViewController.swift in Sources */,
 				64DD3FFB275090AC00160991 /* BaseCollectionViewCell.swift in Sources */,
 				64B680C52762227D00971E4B /* CustomButton.swift in Sources */,
