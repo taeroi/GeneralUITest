@@ -31,15 +31,15 @@ final class MyViewController: BaseViewController {
 
     
     // ===== UI ======
-    
-    lazy var tableView: UITableView = {
-        let tableView = UITableView()
-        tableView.frame = CGRect(
+    lazy var tableView: BaseTableView = {
+        var tableView = BaseTableView()
+        let frame = CGRect(
             x: 0,
             y: -statusBarHeight,
             width: DefaultConstants.shared.screenWidth,
             height: DefaultConstants.shared.screenHeight + statusBarHeight
         )
+        tableView = BaseTableView(frame: frame, style: .grouped)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.contentInset = UIEdgeInsets(
@@ -54,12 +54,15 @@ final class MyViewController: BaseViewController {
             bottom: 0,
             right: DefaultConstants.shared.my.leftMargin
         )
+        tableView.separatorStyle = .none
+        
         tableView.registerClassCell(MyTopInfoCell.self)
         tableView.registerClassCell(MyStoryCell.self)
-        tableView.registerClassCell(MyContentCell.self)
+        tableView.registerClassCell(MyContentListCell.self)
+        tableView.registerClassHeaderFooterView(MyContentHeader.self)
+        
         return tableView
     }()
-
     lazy var topImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = #imageLiteral(resourceName: "my_sample_image6")
@@ -79,7 +82,7 @@ final class MyViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
     
     
@@ -97,22 +100,33 @@ final class MyViewController: BaseViewController {
 
 extension MyViewController: UITableViewDataSource {
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        switch section {
+        case 0:
+            return 2
+        case 1:
+            return 1
+        default:
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.row {
-        case 0:
+        switch (indexPath.section, indexPath.row) {
+        case (0, 0):
             return tableView.dequeueReusable(MyTopInfoCell.self, for: indexPath)
-        case 1:
+        case (0, 1):
             let cell = tableView.dequeueReusable(MyStoryCell.self, for: indexPath)
             cell.pushAction = { [weak self] cellIndexPath in
                 print("story model :: ", cellIndexPath)
             }
             return cell
-        case 2:
-            return tableView.dequeueReusable(MyContentCell.self, for: indexPath)
+        case (1, _):
+            return tableView.dequeueReusable(MyContentListCell.self, for: indexPath)
         default:
             return UITableViewCell()
         }
@@ -123,12 +137,12 @@ extension MyViewController: UITableViewDataSource {
 extension MyViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch indexPath.row {
-        case 0:
+        switch (indexPath.section, indexPath.row) {
+        case (0, 0):
             return DefaultConstants.shared.my.topInfoCellHeight
-        case 1:
+        case (0, 1):
             return DefaultConstants.shared.my.storyCellHeight
-        case 2:
+        case (1, _):
             return DefaultConstants.shared.my.contentCellHeight
         default:
             return 0
@@ -156,6 +170,31 @@ extension MyViewController: UITableViewDelegate {
     }
     
 }
+
+
+//MARK: - TableView Header
+
+extension MyViewController {
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        switch section {
+        case 1:
+            return tableView.dequeueReusableHeaderFooterView(MyContentHeader.self)
+        default:
+            return UIView()
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        switch section {
+        case 1:
+            return 100
+        default:
+            return 0
+        }
+    }
+}
+
 
 extension MyViewController {
 
