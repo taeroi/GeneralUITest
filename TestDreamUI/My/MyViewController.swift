@@ -106,7 +106,11 @@ extension MyViewController: UITableViewDataSource {
         case 0:
             return tableView.dequeueReusable(MyTopInfoCell.self, for: indexPath)
         case 1:
-            return tableView.dequeueReusable(MyStoryCell.self, for: indexPath)
+            let cell = tableView.dequeueReusable(MyStoryCell.self, for: indexPath)
+            cell.pushAction = { [weak self] model in
+                print("story model :: ", model)
+            }
+            return cell
         case 2:
             return tableView.dequeueReusable(MyContentCell.self, for: indexPath)
         default:
