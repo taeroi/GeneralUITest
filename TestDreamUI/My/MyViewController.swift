@@ -125,11 +125,11 @@ extension MyViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
-            return 300
+            return DefaultConstants.shared.my.topInfoCellHeight
         case 1:
-            return 100
+            return DefaultConstants.shared.my.storyCellHeight
         case 2:
-            return 500
+            return DefaultConstants.shared.my.contentCellHeight
         default:
             return 0
         }

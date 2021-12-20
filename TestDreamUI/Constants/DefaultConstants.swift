@@ -53,7 +53,7 @@ final class DefaultConstants: NSObject {
         let storyImageBorderWidth: CGFloat = 1.0
         
         //===== Cell Height =====
-        let topInfoCellHeight: CGFloat = 300
+        let topInfoCellHeight: CGFloat = 200
         let storyCellHeight: CGFloat = 120
         let contentCellHeight: CGFloat = 500
     }
