@@ -278,6 +278,14 @@
 			path = My;
 			sourceTree = "<group>";
 		};
+		64D56CE727704A1000917A26 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				647FCA6D2765C4B3007D3C6D /* DefaultConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		64D7CCA8275C90790003B170 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,7 +311,6 @@
 		64D7CCAA275C90830003B170 /* Lounge */ = {
 			isa = PBXGroup;
 			children = (
-				647FCA6D2765C4B3007D3C6D /* DefaultConstants.swift */,
 				64B66FAC2766437700224BDB /* ViewControllers */,
 				647C22D4276341D900A9F04A /* Headers */,
 				647C22D3276341D300A9F04A /* Cells */,
@@ -372,9 +379,9 @@
 				64D7CCAA275C90830003B170 /* Lounge */,
 				64D7CCA9275C907F0003B170 /* My */,
 				64DD3FFE275096BE00160991 /* BaseUI */,
-				64B680C32762224C00971E4B /* UIComponent */,
 				64D7CCB6275CAC8D0003B170 /* CollectionViewFlowLayout */,
 				647FCA6A2765C265007D3C6D /* Extension */,
+				64D56CE727704A1000917A26 /* Constants */,
 				64DD3FCD27507C8B00160991 /* Assets.xcassets */,
 				64DD3FCF27507C8B00160991 /* LaunchScreen.storyboard */,
 				64DD3FD227507C8B00160991 /* Info.plist */,
@@ -408,6 +415,7 @@
 				64B66FA62766378500224BDB /* BaseTableView.swift */,
 				64DD3FFA275090AC00160991 /* BaseCollectionViewCell.swift */,
 				647664B0275CF24E001A7D7C /* BaseTableViewCell.swift */,
+				64B680C32762224C00971E4B /* UIComponent */,
 			);
 			path = BaseUI;
 			sourceTree = "<group>";
